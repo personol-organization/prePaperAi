@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrePaperAI — Question Papers & Live Competitions</title>
+  <meta name="description"
+    content="Turn any teaching material into ready-to-print question papers and live student competitions in minutes, with PrePaperAI.">
+  <link rel="canonical" href="https://prepaperai.example.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PrePaperAI — Question Papers & Live Competitions">
+  <meta property="og:description"
+    content="Turn your teaching material into question papers and live learning experiences, in minutes.">
+  <meta property="og:url" content="https://prepaperai.example.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PrePaperAI — Question Papers & Live Competitions">
+  <meta name="twitter:description"
+    content="Turn your teaching material into question papers and live learning experiences, in minutes.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "PrePaperAI",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Web",
+  "description": "Turn teaching material into question papers and live student competitions.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+</head>
+
+<body>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <nav class="nav" id="siteNav">
+    <a href="#top" class="brand"><span class="mark">PP</span>PrePaperAI</a>
+    <a href="#early-access" class="btn btn-primary nav-cta">Get Early Access</a>
+  </nav>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="container">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">For teachers, by design</p>
+          <h1>Turn Teaching Material Into <span class="accent">Exams & Live Games.</span></h1>
+          <p class="sub">Upload once. Auto-generate unit tests, printable exams, and live class competitions students
+            actually look forward to.</p>
+          <div class="hero-ctas">
+            <a href="#early-access" class="btn btn-primary">Get Early Access</a>
+            <a href="#one-source" class="btn btn-ghost">See How It Works</a>
+          </div>
+        </div>
+
+        <div class="hero-scene" data-reveal data-reveal-delay="2">
+          <div class="graph-card">
+            <div class="graph-header">
+              <span class="graph-badge"><span class="pulse-dot"></span> Interactive Workflow</span>
+              <span class="graph-tagline">Content → PrePaperAI → 2 Branch Outputs</span>
+            </div>
+
+            <div class="graph-flow">
+              <!-- Stage 1: Learning Content Input -->
+              <div class="flow-step step-input">
+                <div class="step-card">
+                  <div class="card-img-box">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="node-graphic"
+                      aria-label="Learning Content Icon">
+                      <rect width="100" height="100" rx="16" fill="url(#grad-input-bg)" />
+                      <path
+                        d="M28 26H64C68.4 26 72 29.6 72 34V76C72 76 66.4 72.8 60 72.8C53.6 72.8 48 76 48 76V34C48 29.6 44.4 26 40 26H28V76H40C46.4 76 52 79.2 52 79.2C52 79.2 57.6 76 64 76"
+                        stroke="#FFC561" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M28 34H44" stroke="#FFC561" stroke-width="2.5" stroke-linecap="round" />
+                      <path d="M54 39H66" stroke="#8B7FFB" stroke-width="2" stroke-linecap="round" />
+                      <path d="M54 47H63" stroke="#8B7FFB" stroke-width="2" stroke-linecap="round" />
+                      <path d="M54 55H66" stroke="#8B7FFB" stroke-width="2" stroke-linecap="round" />
+                      <rect x="58" y="18" width="30" height="14" rx="7" fill="#5B4FE0" />
+                      <text x="73" y="28" fill="white" font-size="7" font-weight="700"
+                        text-anchor="middle">PDF/DOC</text>
+                      <defs>
+                        <linearGradient id="grad-input-bg" x1="0" y1="0" x2="100" y2="100"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#1E1B4B" />
+                          <stop stop-color="#0E1530" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="card-details">
+                    <!-- <span class="pill-tag">STEP 1</span> -->
+                    <h4>Learning Content</h4>
+                    <p>Upload notes, PDFs & slides</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Connector into Hub -->
+              <div class="flow-arrow-horizontal">
+                <div class="connector-line"></div>
+                <span class="arrow-head">➔</span>
+              </div>
+
+              <!-- Stage 2: Central AI Hub (PrePaperAI) -->
+              <div class="flow-step step-hub">
+                <div class="step-card hub-card">
+                  <div class="card-img-box hub-box">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="node-graphic"
+                      aria-label="PrePaperAI Hub Icon">
+                      <rect width="100" height="100" rx="20" fill="url(#grad-hub-bg)" />
+                      <circle cx="50" cy="50" r="32" stroke="url(#grad-hub-ring)" stroke-width="2.5"
+                        stroke-dasharray="5 3" />
+                      <circle cx="50" cy="50" r="22" fill="url(#grad-hub-core)" />
+                      <rect x="42" y="42" width="16" height="16" rx="4" fill="#0A0F1F" />
+                      <circle cx="47" cy="48" r="1.5" fill="#FFC561" />
+                      <circle cx="53" cy="48" r="1.5" fill="#FFC561" />
+                      <path d="M46 53C48 54.5 52 54.5 54 53" stroke="#FFC561" stroke-width="1.5"
+                        stroke-linecap="round" />
+                      <defs>
+                        <linearGradient id="grad-hub-bg" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#4338CA" />
+                          <stop stop-color="#141D40" />
+                        </linearGradient>
+                        <linearGradient id="grad-hub-ring" x1="0" y1="0" x2="100" y2="100"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#FFC561" />
+                          <stop stop-color="#8B7FFB" />
+                        </linearGradient>
+                        <linearGradient id="grad-hub-core" x1="0" y1="0" x2="100" y2="100"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#FFC561" />
+                          <stop stop-color="#F5A524" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="card-details">
+                    <span class="pill-tag amber">AI HUB</span>
+                    <h4>PrePaperAI</h4>
+                    <p>Central smart generator</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Two Branches Split Connector -->
+              <div class="flow-branches-connector">
+                <svg viewBox="0 0 40 160" fill="none" xmlns="http://www.w3.org/2000/svg" class="branch-svg">
+                  <path d="M 0 80 H 15 C 25 80, 25 35, 40 35" stroke="url(#line-branch-top)" stroke-width="2.5"
+                    stroke-linecap="round" />
+                  <path d="M 0 80 H 15 C 25 80, 25 125, 40 125" stroke="url(#line-branch-bottom)" stroke-width="2.5"
+                    stroke-linecap="round" />
+                  <circle cx="40" cy="35" r="3.5" fill="#8B7FFB" />
+                  <circle cx="40" cy="125" r="3.5" fill="#FFC561" />
+                  <defs>
+                    <linearGradient id="line-branch-top" x1="0" y1="80" x2="40" y2="35" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#F5A524" />
+                      <stop stop-color="#8B7FFB" />
+                    </linearGradient>
+                    <linearGradient id="line-branch-bottom" x1="0" y1="80" x2="40" y2="125"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#F5A524" />
+                      <stop stop-color="#FFC561" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+
+              <!-- Stage 3: Two Output Branches -->
+              <div class="flow-outputs-column">
+                <!-- Branch 1 -->
+                <div class="flow-step step-branch branch-paper">
+                  <div class="step-card output-card">
+                    <div class="card-img-box">
+                      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="node-graphic"
+                        aria-label="Question Papers Icon">
+                        <rect width="100" height="100" rx="16" fill="url(#grad-paper-bg)" />
+                        <rect x="26" y="18" width="48" height="64" rx="5" fill="#FFFFFF" />
+                        <rect x="32" y="24" width="26" height="5" rx="1.5" fill="#4338CA" />
+                        <rect x="32" y="33" width="36" height="2.5" rx="1" fill="#6B6F7D" />
+                        <rect x="32" y="39" width="30" height="2.5" rx="1" fill="#E7E3D9" />
+                        <rect x="32" y="47" width="36" height="2.5" rx="1" fill="#6B6F7D" />
+                        <rect x="32" y="53" width="22" height="2.5" rx="1" fill="#E7E3D9" />
+                        <circle cx="64" cy="26" r="8" fill="#10B981" />
+                        <path d="M60 26L63 29L68 23" stroke="white" stroke-width="1.8" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <rect x="30" y="64" width="18" height="10" rx="3" fill="#4338CA" />
+                        <text x="39" y="71.5" fill="white" font-size="6" font-weight="700"
+                          text-anchor="middle">PDF</text>
+                        <rect x="51" y="64" width="18" height="10" rx="3" fill="#F5A524" />
+                        <text x="60" y="71.5" fill="#0A0F1F" font-size="6" font-weight="700"
+                          text-anchor="middle">DOCX</text>
+                        <defs>
+                          <linearGradient id="grad-paper-bg" x1="0" y1="0" x2="100" y2="100"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#1E1B4B" />
+                            <stop stop-color="#312E81" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div class="card-details">
+                      <!-- <span class="pill-tag indigo">BRANCH 1</span> -->
+                      <h4>Question Papers</h4>
+                      <p>Printable tests & exams</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Branch 2 -->
+                <div class="flow-step step-branch branch-game">
+                  <div class="step-card output-card">
+                    <div class="card-img-box">
+                      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="node-graphic"
+                        aria-label="Live Game Icon">
+                        <rect width="100" height="100" rx="16" fill="url(#grad-game-bg)" />
+                        <rect x="32" y="14" width="36" height="72" rx="8" fill="#0A0F1F" stroke="#FFC561"
+                          stroke-width="1.5" />
+                        <rect x="35" y="19" width="30" height="62" rx="5" fill="#F2F0EA" />
+                        <rect x="38" y="24" width="24" height="10" rx="2.5" fill="#4338CA" />
+                        <text x="50" y="31" fill="white" font-size="6" font-weight="700"
+                          text-anchor="middle">00:12</text>
+                        <rect x="38" y="38" width="24" height="5.5" rx="1.5" fill="#FFFFFF" />
+                        <rect x="38" y="45.5" width="24" height="5.5" rx="1.5" fill="#10B981" />
+                        <rect x="38" y="53" width="24" height="5.5" rx="1.5" fill="#FFFFFF" />
+                        <circle cx="50" cy="68" r="6.5" fill="#F5A524" />
+                        <text x="50" y="70.5" fill="#0A0F1F" font-size="6.5" font-weight="700"
+                          text-anchor="middle">#1</text>
+                        <defs>
+                          <linearGradient id="grad-game-bg" x1="0" y1="0" x2="100" y2="100"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#141D40" />
+                            <stop stop-color="#0E1530" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div class="card-details">
+                      <!-- <span class="pill-tag amber">BRANCH 2</span> -->
+                      <h4>Live Class Game</h4>
+                      <p>Phone quiz & live rankings</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- THE TEACHER'S REALITY -->
+    <section class="pad" id="reality">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Teaching at your own pace</p>
+          <h2>Prepare exams & games for any lesson, anytime.</h2>
+        </div>
+
+        <div class="chips-wrap" data-reveal>
+          <span class="chip">Lesson completion</span>
+          <span class="chip">Daily practice</span>
+          <span class="chip">Chapter tests</span>
+          <span class="chip">Quick revisions</span>
+          <span class="chip">Printable exams</span>
+          <span class="chip">Class competitions</span>
+        </div>
+
+        <div class="reality-split">
+          <div class="problem-card" data-reveal>
+            <h3>The preparation hassle</h3>
+            <p>Creating fresh question papers and reformatting content after every lesson or topic takes hours you'd rather spend teaching.</p>
+          </div>
+          <div class="problem-card" data-reveal data-reveal-delay="1">
+            <h3>The motivation challenge</h3>
+            <p>Students learn best with immediate practice after every lesson. Live games give them a fun, social reason to review anytime.</p>
+          </div>
+          <div class="problem-card" data-reveal data-reveal-delay="2">
+            <h3>Stronger teacher connection</h3>
+            <p>Interactive live games make learning fun and friendly, helping teachers connect with students and build great classroom rapport effortlessly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY NOT JUST USE GENERAL AI? (Position 2 - Immediately After Hero) -->
+    <section class="pad compare-section-wrap" id="why-prepaperai">
+      <div class="container">
+        <div class="section-head text-center" data-reveal>
+          <span class="eyebrow">Purpose-Built For Education</span>
+          <h2>Why Not Just Use General AI (ChatGPT)?</h2>
+          <p class="sub-head">General chatbots give raw text that requires hours of reformatting. PrePaperAI outputs
+            official, print-ready exam papers and live games instantly.</p>
+        </div>
+
+        <div class="compare-showcase" data-reveal>
+          <!-- Left: General AI Card (Sleek Neutral Tone - No Red) -->
+          <div class="compare-card compare-bad">
+            <div class="card-status-badge bad-badge">
+              <span class="status-icon">🤖</span> Standard Chatbots (ChatGPT / Claude)
+            </div>
+            <h3 class="compare-card-title">The Copy-Paste & Format Loop</h3>
+            <p class="compare-card-subtitle">Takes 30–45 minutes of tedious manual formatting for every single test
+              paper.</p>
+
+            <div class="compare-step-list">
+              <div class="compare-step-item bad-item">
+                <span class="step-icon bad-icon">•</span>
+                <div class="step-text">
+                  <strong>Prompt & Copy Text</strong>
+                  <span>Ask in chat window and copy raw plain text into Word/Docs.</span>
+                </div>
+              </div>
+              <div class="compare-step-item bad-item">
+                <span class="step-icon bad-icon">•</span>
+                <div class="step-text">
+                  <strong>Manual Layout & Alignment</strong>
+                  <span>Fix broken option alignments (A, B, C, D) and line spacing manually.</span>
+                </div>
+              </div>
+              <div class="compare-step-item bad-item">
+                <span class="step-icon bad-icon">•</span>
+                <div class="step-text">
+                  <strong>Marks Calculation & Headers</strong>
+                  <span>Calculate section total marks by hand and format board headers.</span>
+                </div>
+              </div>
+              <div class="compare-step-item bad-item">
+                <span class="step-icon bad-icon">•</span>
+                <div class="step-text">
+                  <strong>Re-Prompting Frustration</strong>
+                  <span>Lost formatting every time you ask the AI to modify a question.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="compare-metric bad-metric">
+              <span>⏱️ Average Prep Time: <strong>45 Mins</strong></span>
+              <span class="metric-tag">Manual Process</span>
+            </div>
+          </div>
+
+          <!-- VS Divider Pill -->
+          <div class="vs-pill">VS</div>
+
+          <!-- Right: PrePaperAI Purpose-Built Card -->
+          <div class="compare-card compare-good">
+            <div class="card-status-badge good-badge">
+              <span class="status-icon">✨</span> PrePaperAI Smart Engine
+            </div>
+            <h3 class="compare-card-title">Zero Formatting. Pure Teaching.</h3>
+            <p class="compare-card-subtitle">Instant official board-style papers and live class quiz games from your
+              syllabus.</p>
+
+            <div class="compare-step-list">
+              <div class="compare-step-item good-item">
+                <span class="step-icon good-icon">✓</span>
+                <div class="step-text">
+                  <strong>1-Click Syllabus Sourcing</strong>
+                  <span>Select from NCERT / State Board books or upload your private library.</span>
+                </div>
+              </div>
+              <div class="compare-step-item good-item">
+                <span class="step-icon good-icon">✓</span>
+                <div class="step-text">
+                  <strong>Auto Exam Sheet Formatting</strong>
+                  <span>Instant official headers, double-rule borders, marks breakdown & OMR keys.</span>
+                </div>
+              </div>
+              <div class="compare-step-item good-item">
+                <span class="step-icon good-icon">✓</span>
+                <div class="step-text">
+                  <strong>Conversational Paper Edits</strong>
+                  <span>Change any question on the fly without breaking the page layout.</span>
+                </div>
+              </div>
+              <div class="compare-step-item good-item">
+                <span class="step-icon good-icon">✓</span>
+                <div class="step-text">
+                  <strong>Dual Output (Print PDF + Live Game)</strong>
+                  <span>Turn the exact same test into a live phone competition for students.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="compare-metric good-metric">
+              <span>⚡ Average Prep Time: <strong>30 Seconds</strong></span>
+              <span class="metric-tag gold">98% Faster</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ONE SOURCE, MULTIPLE USES -->
+    <section class="pad" id="one-source" style="background:var(--paper-100)">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">One source, multiple uses</p>
+          <h2>Add your material once. Use it everywhere.</h2>
+          <p class="sub-head">The same chapter turns into printable test papers and live class competitions — no
+            re-entering content.</p>
+        </div>
+
+        <div class="workflow-grid" data-reveal>
+          <!-- Step 1 Card (Polished Default & Private Library Showcase) -->
+          <div class="workflow-card">
+            <div class="workflow-step-num">01</div>
+            <div class="workflow-icon-box">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="80" height="80" rx="16" fill="#141D40" />
+                <path
+                  d="M22 20H50C53.3 20 56 22.7 56 26V60C56 60 51.5 57.5 46.5 57.5C41.5 57.5 37 60 37 60V26C37 22.7 34.3 20 31 20H22V60H31C36 60 40.5 62.5 40.5 62.5C40.5 62.5 45 60 50 60"
+                  stroke="#FFC561" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M42 30H50" stroke="#8B7FFB" stroke-width="1.8" stroke-linecap="round" />
+                <path d="M42 37H48" stroke="#8B7FFB" stroke-width="1.8" stroke-linecap="round" />
+                <circle cx="56" cy="22" r="7" fill="#5B4FE0" />
+                <path d="M53 22H59M56 19V25" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="workflow-badge">INPUT SOURCE</div>
+            <h3>Default Library & Private Uploads</h3>
+            <p>Pick built-in NCERT & State Board books in 1-click, or upload custom notes.</p>
+            
+            <div class="library-inline-pills">
+              <span class="lib-pill default-pill">📚 Built-in Books</span>
+              <span class="lib-pill custom-pill">🔒 Private Vault</span>
+            </div>
+
+            <ul class="workflow-list">
+              <li>
+                <span class="dot"></span>
+                <div class="li-content">
+                  <span class="li-title">Built-in Books:</span>
+                  <span class="li-sub">NCERT & State Boards (0 upload)</span>
+                </div>
+              </li>
+              <li>
+                <span class="dot"></span>
+                <div class="li-content">
+                  <span class="li-title">Private Uploads:</span>
+                  <span class="li-sub">Your PDFs & slides (Secure)</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Step 2 Card -->
+          <div class="workflow-card highlighted">
+            <div class="workflow-step-num">02</div>
+            <div class="workflow-icon-box">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="80" height="80" rx="16" fill="#1E1B4B" />
+                <rect x="22" y="16" width="36" height="48" rx="4" fill="#FFFFFF" />
+                <rect x="26" y="22" width="20" height="4" rx="1" fill="#4338CA" />
+                <rect x="26" y="29" width="28" height="2" rx="1" fill="#9CA3AF" />
+                <rect x="26" y="34" width="24" height="2" rx="1" fill="#9CA3AF" />
+                <rect x="26" y="39" width="26" height="2" rx="1" fill="#E5E7EB" />
+                <circle cx="52" cy="22" r="6" fill="#10B981" />
+                <path d="M49 22L51 24L55 20" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="workflow-badge indigo">OUTPUT A</div>
+            <h3>Printable Question Papers</h3>
+            <p>Generate balanced question papers, chapter unit tests, and answer keys formatted ready for printing or
+              export.</p>
+            <ul class="workflow-list">
+              <li><span class="dot"></span>Custom difficulty levels</li>
+              <li><span class="dot"></span>Export to Word / PDF</li>
+            </ul>
+          </div>
+
+          <!-- Step 3 Card -->
+          <div class="workflow-card">
+            <div class="workflow-step-num">03</div>
+            <div class="workflow-icon-box">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="80" height="80" rx="16" fill="#0A0F1F" />
+                <rect x="26" y="12" width="28" height="56" rx="6" fill="#1E1B4B" stroke="#FFC561" stroke-width="1.2" />
+                <rect x="28" y="16" width="24" height="48" rx="4" fill="#F2F0EA" />
+                <rect x="31" y="20" width="18" height="8" rx="2" fill="#4338CA" />
+                <circle cx="40" cy="52" r="5" fill="#F5A524" />
+                <text x="40" y="54" fill="#0A0F1F" font-size="5" font-weight="700" text-anchor="middle">#1</text>
+              </svg>
+            </div>
+            <div class="workflow-badge amber">OUTPUT B</div>
+            <h3>Live Class Competitions</h3>
+            <p>Instantly transform the same material into a live interactive quiz game. Students compete on their phones
+              with real-time rankings.</p>
+            <ul class="workflow-list">
+              <li><span class="dot"></span>Instant room join code</li>
+              <li><span class="dot"></span>Live leaderboard & excitement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TWO MODULES -->
+    <section class="pad" id="modules">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Two modules, one source</p>
+          <h2>Built for both classroom paperwork and classroom energy.</h2>
+        </div>
+
+        <div class="modules-grid">
+          <div class="module-card assess" data-reveal>
+            <span class="module-tag">Assessment Module</span>
+            <h3>Papers that print and grade cleanly</h3>
+            <ul class="module-list">
+              <li><span class="dot"></span>Generate unit tests, weekly tests and full exams from your syllabus</li>
+              <li><span class="dot"></span>Mix question types and control marks distribution</li>
+              <li><span class="dot"></span>Edit any question by simply describing the change</li>
+              <li><span class="dot"></span>Export to PDF or DOCX, ready to print</li>
+            </ul>
+          </div>
+          <div class="module-card game" data-reveal data-reveal-delay="1">
+            <span class="module-tag">Live Game Module</span>
+            <h3>Turn revision into a live event</h3>
+            <ul class="module-list">
+              <li><span class="dot"></span>Schedule a class competition from the same content</li>
+              <li><span class="dot"></span>Students join from their phones with one tap</li>
+              <li><span class="dot"></span>Live leaderboard, streaks, and timers keep energy high</li>
+              <li><span class="dot"></span>Notify the class instantly via app or WhatsApp</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- START IMMEDIATELY OR USE YOUR OWN MATERIAL -->
+    <section class="pad" style="background:var(--paper-100)">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Two ways to start</p>
+          <h2>Pick from ready-made books or upload your private library.</h2>
+        </div>
+
+        <div class="choice-grid">
+          <div class="choice-card" data-reveal>
+            <span class="num">Option 1</span>
+            <h3>Ready-Made Library</h3>
+            <p>Select directly from built-in NCERT textbooks, State Board books, and standard curricula — start
+              generating questions in 1-click without uploading anything.</p>
+          </div>
+          <div class="choice-card" data-reveal data-reveal-delay="1">
+            <span class="num">Option 2</span>
+            <h3>Private Teacher Library</h3>
+            <p>Upload your own PDF notes, textbook chapters, or slides. Stored in your private library — strictly secure
+              and accessible only by you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UPLOAD ONCE, REUSE FOREVER -->
+    <section class="pad">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Add once, reuse forever</p>
+          <h2>One chapter. Five different outcomes.</h2>
+        </div>
+
+        <div class="reuse-origin" data-reveal>
+          <span class="icon-box">📘</span> Class 8 Science — added once
+        </div>
+
+        <div class="reuse-fan">
+          <div class="reuse-tile" data-reveal>
+            <div class="icon-box">📝</div><span>Test</span>
+          </div>
+          <div class="reuse-tile" data-reveal data-reveal-delay="1">
+            <div class="icon-box">📄</div><span>Exam</span>
+          </div>
+          <div class="reuse-tile" data-reveal data-reveal-delay="2">
+            <div class="icon-box">✏️</div><span>Practice</span>
+          </div>
+          <div class="reuse-tile" data-reveal data-reveal-delay="3">
+            <div class="icon-box">❓</div><span>Quiz</span>
+          </div>
+          <div class="reuse-tile" data-reveal data-reveal-delay="4">
+            <div class="icon-box">🎮</div><span>Game</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JUST DESCRIBE WHAT YOU NEED -->
+    <section class="pad" style="background:var(--navy-950)">
+      <div class="container on-dark">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">No formatting required</p>
+          <h2>Just describe what you need.</h2>
+          <p>Talk to PrePaperAI the way you'd brief a colleague — it builds and edits the paper in real time.</p>
+        </div>
+
+        <div class="chat-panel" data-reveal>
+          <div class="bar"><span></span><span></span><span></span></div>
+
+          <div class="chat-msg user" data-chat-msg>
+            <div class="chat-bubble">Create a 50-mark Maths paper from Chapters 1–4</div>
+          </div>
+          <div class="chat-msg ai" data-chat-msg>
+            <div class="chat-bubble">
+              Here's your draft — Section A covers Chapters 1–2, Section B covers 3–4.
+              <div class="chat-mini-paper">
+                <div class="row"><span>Q1. Solve for x: 2x + 5 = 17</span><span>4 marks</span></div>
+                <div class="row"><span>Q2. Define rational numbers with an example</span><span>3 marks</span></div>
+                <div class="row"><span>Q3. Prove the given triangle is isosceles</span><span>6 marks</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="chat-msg user" data-chat-msg>
+            <div class="chat-bubble">Change Question 2 into MCQ</div>
+          </div>
+          <div class="chat-msg ai" data-chat-msg>
+            <div class="chat-bubble">
+              Done — Question 2 is now multiple choice with 4 options.
+              <div class="chat-mini-paper">
+                <div class="row"><span>Q2. A rational number can be written as —</span><span>3 marks</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE QUESTION TYPES SHOWCASE -->
+    <section class="pad" id="question-types" style="background:var(--paper-100)">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Interactive Format Preview</p>
+          <h2>Every Question Format Your Subject Needs.</h2>
+          <p class="sub-head">Click any format below to see how PrePaperAI generates formatted questions with instant
+            answer keys.</p>
+        </div>
+
+        <!-- CHIPS-WRAP STYLE TABS -->
+        <div class="qtype-chips-wrap" data-reveal role="tablist" aria-label="Question Formats">
+          <button class="qtab-chip active" data-qtype="mcq">☑️ Multiple Choice (MCQs)</button>
+          <button class="qtab-chip" data-qtype="qa">✍️ Short & Long Q&A</button>
+          <button class="qtab-chip" data-qtype="blanks">📝 Fill in the Blanks</button>
+          <button class="qtab-chip" data-qtype="match">🔗 Match the Following</button>
+          <button class="qtab-chip" data-qtype="passage">📖 Passage-Based</button>
+          <button class="qtab-chip" data-qtype="diagram">📐 Diagram & Figures</button>
+        </div>
+
+        <div class="qtype-showcase" data-reveal>
+          <!-- Left Column: Active Description Details -->
+          <div class="qtype-left">
+            <div class="qtype-desc-card">
+              <div class="desc-content active" id="desc-mcq">
+                <div class="desc-badge">SINGLE & MULTI-SELECT</div>
+                <h3>Multiple Choice Questions (MCQs)</h3>
+                <p>Generate single-choice or multi-correct MCQs with realistic distractors extracted directly from your
+                  selected chapter or NCERT textbook.</p>
+                <ul class="desc-features">
+                  <li><span class="feat-bullet">•</span> Auto-balanced options (A, B, C, D) formatted for standard print
+                  </li>
+                  <li><span class="feat-bullet">•</span> Instant answer key with detailed step-by-step explanation</li>
+                  <li><span class="feat-bullet">•</span> Realistic distractor options generated from syllabus topics
+                  </li>
+                  <li><span class="feat-bullet">•</span> Compatible with OMR answer sheets & live classroom games</li>
+                  <li><span class="feat-bullet">•</span> One-click difficulty adjustment (Easy, Medium, Hard)</li>
+                </ul>
+              </div>
+
+              <div class="desc-content" id="desc-qa">
+                <div class="desc-badge">CONCEPTUAL & ANALYTICAL</div>
+                <h3>Short & Long Answer Questions</h3>
+                <p>Build 2-mark conceptual definitions, 3-mark analytical problems, and 5-mark structured multi-step
+                  questions with marking rubrics.</p>
+                <ul class="desc-features">
+                  <li><span class="feat-bullet">•</span> Configurable mark allocation per section (2, 3 & 5 Marks)</li>
+                  <li><span class="feat-bullet">•</span> Step-by-step model answer keys included for grading</li>
+                  <li><span class="feat-bullet">•</span> Clean line spacing guidelines formatted for handwritten tests
+                  </li>
+                  <li><span class="feat-bullet">•</span> Optional internal choices for board pattern compliance</li>
+                  <li><span class="feat-bullet">•</span> Direct mapping to Bloom's taxonomy cognitive levels</li>
+                </ul>
+              </div>
+
+              <div class="desc-content" id="desc-blanks">
+                <div class="desc-badge">VOCABULARY & RECALL</div>
+                <h3>Fill in the Blanks</h3>
+                <p>Auto-generate vocabulary, formula, or key definition completion questions with optional word banks
+                  for quick testing.</p>
+                <ul class="desc-features">
+                  <li><span class="feat-bullet">•</span> Key term & definition extraction from selected chapter</li>
+                  <li><span class="feat-bullet">•</span> Optional vocabulary word bank toggle for lower grades</li>
+                  <li><span class="feat-bullet">•</span> Clean underline blanks formatted for handwritten responses</li>
+                  <li><span class="feat-bullet">•</span> Instant answer key generation for rapid paper scoring</li>
+                  <li><span class="feat-bullet">•</span> Auto-shuffled target blanks for randomized test sets</li>
+                </ul>
+              </div>
+
+              <div class="desc-content" id="desc-match">
+                <div class="desc-badge">PAIRED RELATIONSHIPS</div>
+                <h3>Match the Following</h3>
+                <p>Create two-column matching sets for terms, dates, formulas, or definitions with randomized Column B
+                  pairs.</p>
+                <ul class="desc-features">
+                  <li><span class="feat-bullet">•</span> Side-by-side Column A & Column B formal table layout</li>
+                  <li><span class="feat-bullet">•</span> Perfect for quick 4-mark and 5-mark revision sections</li>
+                  <li><span class="feat-bullet">•</span> Auto-shuffled Column B options for fresh test versions</li>
+                  <li><span class="feat-bullet">•</span> High-contrast grid borders optimized for print clarity</li>
+                  <li><span class="feat-bullet">•</span> Multi-concept pairing for dates, formulas & definitions</li>
+                </ul>
+              </div>
+
+              <div class="desc-content" id="desc-passage">
+                <div class="desc-badge">CASE STUDY & COMPREHENSION</div>
+                <h3>Passage & Case-Based Questions</h3>
+                <p>Provide a reading passage, case study, or real-world scenario followed by 3-4 linked comprehension
+                  and inference questions.</p>
+                <ul class="desc-features">
+                  <li><span class="feat-bullet">•</span> Highlighted reading passage & case study box layout</li>
+                  <li><span class="feat-bullet">•</span> Linked sub-questions testing critical & analytical thinking
+                  </li>
+                  <li><span class="feat-bullet">•</span> Fully aligned with modern CBSE board competency standards</li>
+                  <li><span class="feat-bullet">•</span> Automated passage extraction from prescribed textbook chapters
+                  </li>
+                  <li><span class="feat-bullet">•</span> Included scoring rubrics for comprehensive evaluation</li>
+                </ul>
+              </div>
+
+              <div class="desc-content" id="desc-diagram">
+                <div class="desc-badge">VISUAL & GEOMETRY</div>
+                <h3>Diagram & Figure Questions</h3>
+                <p>Include labeled diagrams, geometry figures, circuit schematics, or graphs with identification prompts
+                  and labeling keys.</p>
+                <ul class="desc-features">
+                  <li><span class="feat-bullet">•</span> High-resolution vector schematics & textbook illustrations</li>
+                  <li><span class="feat-bullet">•</span> Label identification & calculation prompts</li>
+                  <li><span class="feat-bullet">•</span> Professional print scaling tailored for standard A4 paper</li>
+                  <li><span class="feat-bullet">•</span> Clear figure title blocks & caption numbering</li>
+                  <li><span class="feat-bullet">•</span> Answer keys identifying all labeled anatomical/circuit parts
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Realistic Physical Exam Paper Sheet -->
+          <div class="qtype-right">
+            <div class="real-paper-desk">
+              <!-- Physical Paper Page with realistic stacked edges -->
+              <div class="real-paper-sheet">
+                <!-- Background Print Watermark -->
+                <div class="print-watermark">PREPAPER AI — OFFICIAL PRINT</div>
+
+                <!-- Official Board Exam Header -->
+                <div class="print-paper-header">
+                  <div class="print-board-name">CENTRAL BOARD OF SECONDARY EDUCATION</div>
+                  <div class="print-exam-name">PERIODIC TEST / MID-TERM EXAMINATION 2025–26</div>
+                  <div class="print-subject-row">
+                    <span><strong>SUBJECT:</strong> GENERAL SCIENCE</span>
+                    <span><strong>CLASS:</strong> X</span>
+                  </div>
+                  <div class="print-meta-bar">
+                    <span><strong>Time Allowed:</strong> 1.5 Hours</span>
+                    <span><strong>Maximum Marks:</strong> 40</span>
+                  </div>
+                  <div class="print-rule-double"></div>
+
+                  <div class="print-instructions">
+                    <span class="inst-title">General Instructions:</span>
+                    <ol>
+                      <li>All questions are compulsory. Read instructions for each section carefully.</li>
+                      <li>Write clear and legible answers in the space provided.</li>
+                    </ol>
+                  </div>
+                  <div class="print-rule-single"></div>
+                </div>
+
+                <!-- Live Content Panels (Physical Print Aesthetic — One Specimen Per Tab) -->
+                <div class="paper-content active" id="paper-mcq">
+                  <div class="print-section-title">SECTION A: MULTIPLE CHOICE QUESTION</div>
+
+                  <div class="print-qitem">
+                    <p class="print-qtext"><strong>Q.1</strong> Which organelle is known as the powerhouse of the cell?
+                    </p>
+                    <div class="print-mcq-grid">
+                      <div class="print-opt"><span>(A)</span> Ribosome</div>
+                      <div class="print-opt correct"><span>(B)</span> Mitochondria <span class="print-check">✓</span>
+                      </div>
+                      <div class="print-opt"><span>(C)</span> Endoplasmic Reticulum</div>
+                      <div class="print-opt"><span>(D)</span> Golgi Apparatus</div>
+                    </div>
+                    <div class="print-ans-key">✓ <strong>Answer Key: (B) Mitochondria</strong> — <em>[Generates ATP
+                        through cellular respiration]</em></div>
+                  </div>
+                </div>
+
+                <div class="paper-content" id="paper-qa">
+                  <div class="print-section-title">SECTION B: SHORT & LONG ANSWER QUESTION</div>
+
+                  <div class="print-qitem">
+                    <div class="print-qhead">
+                      <span><strong>Q.1</strong> State Snell's Law of Refraction and write its mathematical
+                        formula.</span>
+                      <span class="print-marks">[3 Marks]</span>
+                    </div>
+                    <div class="handwriting-lines">
+                      <div class="hline"></div>
+                      <div class="hline"></div>
+                      <div class="hline"></div>
+                      <div class="hline"></div>
+                    </div>
+                    <div class="print-ans-key">✓ <strong>Model Answer:</strong> <em>The ratio of sin i to sin r is
+                        constant for a given pair of media (n = sin i / sin r).</em></div>
+                  </div>
+                </div>
+
+                <div class="paper-content" id="paper-blanks">
+                  <div class="print-section-title">SECTION C: FILL IN THE BLANK QUESTION</div>
+                  <div class="print-word-bank">
+                    <span>Vocabulary Terms:</span> <em>[ Chlorophyll, Newton, Vacuum, Photosynthesis ]</em>
+                  </div>
+                  <div class="print-qitem">
+                    <p class="print-qtext"><strong>Q.1</strong> In physics, light propagates at its maximum velocity of
+                      3 × 10<sup>8</sup> m/s in a <span class="print-blank-fill">vacuum</span>.</p>
+                    <div class="print-ans-key">✓ <strong>Answer Key: vacuum</strong></div>
+                  </div>
+                </div>
+
+                <div class="paper-content" id="paper-match">
+                  <div class="print-section-title">SECTION D: MATCH THE FOLLOWING QUESTION</div>
+                  <div class="print-qitem">
+                    <p class="print-qtext"><strong>Q.1</strong> Match each item in Column A with its correct term in
+                      Column B:</p>
+                    <table class="print-match-table">
+                      <thead>
+                        <tr>
+                          <th>COLUMN A</th>
+                          <th>COLUMN B</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1. Sodium (Na)</td>
+                          <td>(A) 3 × 10<sup>8</sup> m/s</td>
+                        </tr>
+                        <tr>
+                          <td>2. Speed of Light</td>
+                          <td>(B) Dioptre (D)</td>
+                        </tr>
+                        <tr>
+                          <td>3. Acid in Vinegar</td>
+                          <td>(C) Reactive Metal</td>
+                        </tr>
+                        <tr>
+                          <td>4. Power of Lens</td>
+                          <td>(D) Acetic Acid</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="print-ans-key">✓ <strong>Answer Key:</strong> <em>1-(C), 2-(A), 3-(D), 4-(B)</em></div>
+                  </div>
+                </div>
+
+                <div class="paper-content" id="paper-passage">
+                  <div class="print-section-title">SECTION E: PASSAGE-BASED CASE STUDY</div>
+                  <div class="print-passage-box">
+                    <div class="passage-heading">READING PASSAGE:</div>
+                    <p>Ecosystems rely on energy transfer between trophic levels. Producers convert solar energy into
+                      chemical energy through photosynthesis. Primary consumers feed on producers, transferring about
+                      10% of energy to the next level...</p>
+                  </div>
+                  <div class="print-qitem">
+                    <p class="print-qtext"><strong>Q.1</strong> According to Lindeman's Law, what percentage of energy
+                      is transferred between consecutive trophic levels?</p>
+                    <div class="print-ans-key">✓ <strong>Answer Key:</strong> <em>10% (Lindeman's 10% Energy Transfer
+                        Law)</em></div>
+                  </div>
+                </div>
+
+                <div class="paper-content" id="paper-diagram">
+                  <div class="print-section-title">SECTION F: DIAGRAM & FIGURE QUESTION</div>
+                  <div class="print-figure-box">
+                    <div class="fig-title">FIGURE 1.1 — CELL STRUCTURE DIAGRAM</div>
+                    <svg viewBox="0 0 240 100" class="print-figure-svg">
+                      <rect width="240" height="100" fill="#FFFFFF" stroke="#000000" stroke-width="1.5" />
+                      <circle cx="80" cy="50" r="30" fill="none" stroke="#000000" stroke-width="1.5" />
+                      <circle cx="80" cy="50" r="10" fill="#000000" />
+                      <line x1="80" y1="50" x2="170" y2="50" stroke="#000000" stroke-width="1.5"
+                        stroke-dasharray="4 2" />
+                      <text x="80" y="90" fill="#000000" font-family="Georgia, serif" font-size="9" font-weight="bold"
+                        text-anchor="middle">Nucleus</text>
+                      <text x="178" y="53" fill="#000000" font-family="Georgia, serif" font-size="10"
+                        font-weight="bold">Part (A)</text>
+                    </svg>
+                  </div>
+                  <div class="print-qitem">
+                    <p class="print-qtext"><strong>Q.1</strong> Refer to <strong>FIGURE 1.1</strong> above. Identify
+                      Part (A) and describe its function.</p>
+                    <div class="print-ans-key">✓ <strong>Answer Key: Part (A) = Nuclear Envelope</strong></div>
+                  </div>
+                </div>
+
+                <!-- Footer Page Indicator -->
+                <div class="print-paper-footer">
+                  <span>Page 1 of 2</span>
+                  <span>[ P.T.O. ]</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- PAPER PREVIEW -->
+    <!-- <section class="pad">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Paper preview</p>
+          <h2>What lands in your hands.</h2>
+        </div>
+
+        <div class="paper-sheet" data-reveal>
+          <div class="p-head">
+            <h4>Unit Test — Chapter 3: Motion</h4>
+            <div class="meta">Class 8 · Science · 25 Marks · 40 Minutes</div>
+          </div>
+          <div class="paper-meta-row"><span>Name: ______________</span><span>Roll No: _______</span></div>
+
+          <div class="paper-section">Section A — Objective Type (10 marks)</div>
+          <div class="paper-q">1. Define uniform motion with one real-life example. <em>(2 marks)</em></div>
+          <div class="paper-q">2. Which of the following is a vector quantity? <em>(1 mark)</em></div>
+          <div class="paper-q">3. Fill in the blank: Speed is distance travelled per unit of ______. <em>(1 mark)</em>
+          </div>
+
+          <div class="paper-actions">
+            <button class="btn btn-outline">Download PDF</button>
+            <button class="btn btn-outline">Download DOCX</button>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- LIVE GAME MODULE (Interactive Tabbed Showcase) -->
+    <section class="pad" id="live-game" style="background:var(--paper-100)">
+      <div class="container">
+        <div class="section-head text-center" data-reveal>
+          <span class="eyebrow">Interactive Classroom Energy</span>
+          <h2>From syllabus to live competition, in one flow.</h2>
+          <p class="sub-head">Turn any chapter into a real-time multiplayer classroom quiz game. Students compete on their phones with live leaderboards.</p>
+        </div>
+
+        <!-- Section Navigation Tabs (Auto-Rotates Every 3s) -->
+        <div class="live-tabs-wrap" data-reveal>
+          <button class="live-game-tab active" data-game-tab="waiting">
+            <span class="tab-step-num">01</span>
+            <span class="tab-label">⏳ Waiting Room & Join</span>
+          </button>
+          <button class="live-game-tab" data-game-tab="quiz">
+            <span class="tab-step-num">02</span>
+            <span class="tab-label">🎯 Live Quiz & Slide Qs</span>
+          </button>
+          <button class="live-game-tab" data-game-tab="leaderboard">
+            <span class="tab-step-num">03</span>
+            <span class="tab-label">🏆 Live Leaderboard</span>
+          </button>
+        </div>
+
+        <!-- Main Showcase Stage (Left: Tab Description | Right: Realistic Mobile Phone Screen) -->
+        <div class="live-stage-grid" data-reveal>
+          
+          <!-- Left Column: Tab Descriptions -->
+          <div class="live-stage-left">
+            <div class="live-desc-card">
+              
+              <!-- Tab 1 Explanation -->
+              <div class="live-tab-content active" id="live-desc-waiting">
+                <span class="live-badge amber">STEP 01 — WAITING ROOM</span>
+                <h3>One-Tap Student Join & Live Timer</h3>
+                <p>Teachers launch the game room code or send a quick WhatsApp link. Students tap to join instantly from their phones without creating any account.</p>
+                <ul class="desc-features">
+                  <li><span class="feat-bullet">•</span> Live room countdown timer syncing all devices</li>
+                  <li><span class="feat-bullet">•</span> Instant student avatar join animations</li>
+                  <li><span class="feat-bullet">•</span> Automated WhatsApp invite link sharing</li>
+                </ul>
+              </div>
+
+              <!-- Tab 2 Explanation -->
+              <div class="live-tab-content" id="live-desc-quiz">
+                <span class="live-badge indigo">STEP 02 — LIVE QUIZ QUESTION</span>
+                <h3>Interactive Slide Questions & Instant Response</h3>
+                <p>Questions slide in smoothly with real-time timers. Students select their answers on mobile, earning streak multipliers and speed bonus points.</p>
+                <ul class="desc-features">
+                  <li><span class="feat-bullet">•</span> Smooth horizontal question slide animations</li>
+                  <li><span class="feat-bullet">•</span> Real-time question countdown timer bar</li>
+                  <li><span class="feat-bullet">•</span> Instant streak counters & speed points</li>
+                </ul>
+              </div>
+
+              <!-- Tab 3 Explanation -->
+              <div class="live-tab-content" id="live-desc-leaderboard">
+                <span class="live-badge emerald">STEP 03 — LIVE LEADERBOARD</span>
+                <h3>Real-Time Rank Shifts & Class Hype</h3>
+                <p>After each question, scores update live! Ranks re-order dynamically on screen as top performers climb up the leaderboard.</p>
+                <ul class="desc-features">
+                  <li><span class="feat-bullet">•</span> Dynamic rank re-ordering & score counting</li>
+                  <li><span class="feat-bullet">•</span> Instant podium & top-performer highlights</li>
+                  <li><span class="feat-bullet">•</span> Keeps classroom motivation high through friendly competition</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right Column: Authentic Realistic Mobile Phone Chassis -->
+          <div class="live-stage-right">
+            <div class="phone-mockup-frame">
+              
+              <!-- Phone Bezel Details -->
+              <div class="phone-camera-island"></div>
+              <div class="phone-speaker"></div>
+
+              <!-- Phone Screen Display Viewport -->
+              <div class="phone-screen-viewport">
+                
+                <!-- SCREEN 1: Waiting Room Screen -->
+                <div class="phone-app-screen active" id="phone-screen-waiting">
+                  <div class="app-header">
+                    <span class="app-room-tag">ROOM #4829</span>
+                    <span class="app-live-dot">● LIVE</span>
+                  </div>
+                  <div class="app-body text-center">
+                    <div class="countdown-circle">
+                      <span class="count-label">GAME STARTS IN</span>
+                      <span class="count-number" id="live-countdown-val">00:12</span>
+                    </div>
+                    <div class="waiting-quiz-title">Class 10 Science — Periodic Quiz</div>
+                    <div class="students-joined-bar">
+                      <span class="pulse-icon">👥</span> 24 Students Joined
+                    </div>
+                    <div class="joined-avatars-grid">
+                      <div class="avatar-chip"><span class="avatar-icon bg-indigo">A</span> Aarav</div>
+                      <div class="avatar-chip"><span class="avatar-icon bg-amber">P</span> Priya</div>
+                      <div class="avatar-chip"><span class="avatar-icon bg-navy">R</span> Rahul</div>
+                      <div class="avatar-chip"><span class="avatar-icon bg-indigo">S</span> Sana</div>
+                      <div class="avatar-chip"><span class="avatar-icon bg-amber">A</span> Aditya</div>
+                      <div class="avatar-chip"><span class="avatar-icon bg-navy">+19</span></div>
+                    </div>
+                  </div>
+                  <div class="phone-home-indicator"></div>
+                </div>
+
+                <!-- SCREEN 2: Live Quiz Question Screen (With Slider Effect) -->
+                <div class="phone-app-screen" id="phone-screen-quiz">
+                  <div class="app-header">
+                    <span class="q-progress">QUESTION <strong id="q-num-val">1</strong> OF 3</span>
+                    <span class="q-score-tag">⚡ 1,250 PTS</span>
+                  </div>
+                  
+                  <!-- Question Slider Container -->
+                  <div class="q-slider-track" id="q-slider-track">
+                    
+                    <!-- Slide 1 -->
+                    <div class="q-slide active">
+                      <div class="q-timer-bar-wrap"><div class="q-timer-bar fill-animate"></div></div>
+                      <div class="q-card-text">Q1. Which gas is liberated when sodium reacts with water?</div>
+                      <div class="q-options-list">
+                        <button class="q-opt-btn">(A) Oxygen Gas</button>
+                        <button class="q-opt-btn correct">(B) Hydrogen Gas <span class="chk">✓</span></button>
+                        <button class="q-opt-btn">(C) Nitrogen Gas</button>
+                        <button class="q-opt-btn">(D) Carbon Dioxide</button>
+                      </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="q-slide">
+                      <div class="q-timer-bar-wrap"><div class="q-timer-bar fill-animate"></div></div>
+                      <div class="q-card-text">Q2. What is the SI unit of Electric Current?</div>
+                      <div class="q-options-list">
+                        <button class="q-opt-btn">(A) Volt (V)</button>
+                        <button class="q-opt-btn">(B) Ohm (Ω)</button>
+                        <button class="q-opt-btn correct">(C) Ampere (A) <span class="chk">✓</span></button>
+                        <button class="q-opt-btn">(D) Joule (J)</button>
+                      </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="q-slide">
+                      <div class="q-timer-bar-wrap"><div class="q-timer-bar fill-animate"></div></div>
+                      <div class="q-card-text">Q3. Which organelle is known as the powerhouse of the cell?</div>
+                      <div class="q-options-list">
+                        <button class="q-opt-btn">(A) Ribosome</button>
+                        <button class="q-opt-btn correct">(B) Mitochondria <span class="chk">✓</span></button>
+                        <button class="q-opt-btn">(C) Lysosome</button>
+                        <button class="q-opt-btn">(D) Golgi Body</button>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="q-streak-bar">🔥 3 Answer Streak! (+200 Bonus)</div>
+                  <div class="phone-home-indicator"></div>
+                </div>
+
+                <!-- SCREEN 3: Live Leaderboard Screen (Dynamic Reordering) -->
+                <div class="phone-app-screen" id="phone-screen-leaderboard">
+                  <div class="app-header">
+                    <span class="app-room-tag">🏆 LIVE RANKINGS</span>
+                    <span class="app-live-dot">● ROUND 3</span>
+                  </div>
+                  
+                  <div class="app-body">
+                    <div class="lb-phone-title">Leaderboard</div>
+                    
+                    <!-- Dynamic Re-ordering Leaderboard List -->
+                    <div class="phone-lb-list" id="phone-lb-list">
+                      <div class="phone-lb-row rank-1" data-player="aarav">
+                        <span class="lb-num">1</span>
+                        <span class="lb-avatar bg-amber">👑</span>
+                        <div class="lb-info">
+                          <strong class="lb-name">Aarav M.</strong>
+                          <span class="lb-sub font-mono">Streak 🔥5</span>
+                        </div>
+                        <span class="lb-pts font-mono">2,850</span>
+                      </div>
+
+                      <div class="phone-lb-row rank-2" data-player="priya">
+                        <span class="lb-num">2</span>
+                        <span class="lb-avatar bg-indigo">P</span>
+                        <div class="lb-info">
+                          <strong class="lb-name">Priya S.</strong>
+                          <span class="lb-sub font-mono">Streak 🔥4</span>
+                        </div>
+                        <span class="lb-pts font-mono">2,720</span>
+                      </div>
+
+                      <div class="phone-lb-row rank-3" data-player="rahul">
+                        <span class="lb-num">3</span>
+                        <span class="lb-avatar bg-navy">R</span>
+                        <div class="lb-info">
+                          <strong class="lb-name">Rahul K.</strong>
+                          <span class="lb-sub font-mono">Streak 🔥3</span>
+                        </div>
+                        <span class="lb-pts font-mono">2,540</span>
+                      </div>
+
+                      <div class="phone-lb-row rank-4" data-player="sana">
+                        <span class="lb-num">4</span>
+                        <span class="lb-avatar bg-indigo">S</span>
+                        <div class="lb-info">
+                          <strong class="lb-name">Sana T.</strong>
+                          <span class="lb-sub font-mono">Streak 🔥3</span>
+                        </div>
+                        <span class="lb-pts font-mono">2,390</span>
+                      </div>
+
+                      <div class="phone-lb-row rank-5" data-player="aditya">
+                        <span class="lb-num">5</span>
+                        <span class="lb-avatar bg-amber">A</span>
+                        <div class="lb-info">
+                          <strong class="lb-name">Aditya V.</strong>
+                          <span class="lb-sub font-mono">Streak 🔥2</span>
+                        </div>
+                        <span class="lb-pts font-mono">2,150</span>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="phone-home-indicator"></div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY COMPETITION HELPS STUDENTS -->
+    <section class="pad" style="background:var(--paper-100)">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Why it works</p>
+          <h2>Healthy competition changes how students prepare.</h2>
+        </div>
+
+        <div class="benefit-grid">
+          <div class="benefit-tile" data-reveal>
+            <div class="icon-box">🏆</div><strong>Healthy competition</strong>
+            <p>Motivates without pressure</p>
+          </div>
+          <div class="benefit-tile" data-reveal data-reveal-delay="1">
+            <div class="icon-box">📈</div><strong>Visible progress</strong>
+            <p>Rank moves as they improve</p>
+          </div>
+          <div class="benefit-tile" data-reveal data-reveal-delay="2">
+            <div class="icon-box">🎖️</div><strong>Recognition</strong>
+            <p>Effort gets seen by the class</p>
+          </div>
+          <div class="benefit-tile" data-reveal data-reveal-delay="3">
+            <div class="icon-box">🤝</div><strong>Shared experience</strong>
+            <p>Learning becomes social</p>
+          </div>
+          <div class="benefit-tile" data-reveal data-reveal-delay="4">
+            <div class="icon-box">⚡</div><strong>Faster feedback</strong>
+            <p>Students know instantly</p>
+          </div>
+        </div>
+
+        <div class="rank-progress" data-reveal>
+          <span class="rank-pill from">Rank #18</span>
+          <span class="rank-arrow">→</span>
+          <span class="rank-pill from">Rank #11</span>
+          <span class="rank-arrow">→</span>
+          <span class="rank-pill to">Top 10</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CYCLE -->
+    <!-- <section class="pad">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">The loop</p>
+          <h2>Learn, challenge, prepare, compete, improve — repeat.</h2>
+        </div>
+
+        <div class="cycle-wrap" data-reveal>
+          <div class="cycle-node">
+            <div class="icon-box">📘</div><span>Learn</span>
+          </div>
+          <span class="cycle-arrow">→</span>
+          <div class="cycle-node">
+            <div class="icon-box">🎯</div><span>Challenge</span>
+          </div>
+          <span class="cycle-arrow">→</span>
+          <div class="cycle-node">
+            <div class="icon-box">📝</div><span>Prepare</span>
+          </div>
+          <span class="cycle-arrow">→</span>
+          <div class="cycle-node">
+            <div class="icon-box">🎮</div><span>Compete</span>
+          </div>
+          <span class="cycle-arrow">→</span>
+          <div class="cycle-node">
+            <div class="icon-box">📈</div><span>Improve</span>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- BENEFITS FOR TEACHERS -->
+    <section class="pad" style="background:var(--paper-100)">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Benefits for teachers</p>
+          <h2>Less prep time. More classroom energy.</h2>
+        </div>
+
+        <div class="teacher-benefits">
+          <div class="tb-card" data-reveal>
+            <div class="icon-box">♻️</div><strong>Reuse material</strong>
+            <p>One upload powers every future paper and game.</p>
+          </div>
+          <div class="tb-card" data-reveal data-reveal-delay="1">
+            <div class="icon-box">💬</div><strong>Natural edits</strong>
+            <p>Change any question by describing it, not reformatting it.</p>
+          </div>
+          <div class="tb-card" data-reveal data-reveal-delay="2">
+            <div class="icon-box">🖨️</div><strong>Printable papers</strong>
+            <p>Clean PDF and DOCX exports, exam-ready.</p>
+          </div>
+          <div class="tb-card" data-reveal>
+            <div class="icon-box">🎮</div><strong>Engagement</strong>
+            <p>Turn revision into something students look forward to.</p>
+          </div>
+          <div class="tb-card" data-reveal data-reveal-delay="1">
+            <div class="icon-box">⏱️</div><strong>Time saved</strong>
+            <p>Minutes, not hours, from content to classroom.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPLETE EXAMPLE WALKTHROUGH (Interactive Mobile Phone Showcase) -->
+    <section class="pad" id="walkthrough">
+      <div class="container">
+        <div class="section-head text-center" data-reveal>
+          <span class="eyebrow">End-to-End Walkthrough</span>
+          <h2>Class 8 Science, start to finish.</h2>
+          <p class="sub-head">See how a single chapter goes from syllabus selection to printable paper and export in minutes.</p>
+        </div>
+
+        <!-- Walkthrough Navigation Chips (Auto-Rotates Every 3s) -->
+        <div class="walkthrough-tabs-wrap" data-reveal>
+          <button class="wt-tab active" data-wt-step="1">
+            <span class="wt-step-num">01</span>
+            <span class="wt-label">📘 Pick Chapter</span>
+          </button>
+          <button class="wt-tab" data-wt-step="2">
+            <span class="wt-step-num">02</span>
+            <span class="wt-label">📝 Prompt AI</span>
+          </button>
+          <button class="wt-tab" data-wt-step="3">
+            <span class="wt-step-num">03</span>
+            <span class="wt-label">💬 Natural Edits</span>
+          </button>
+          <button class="wt-tab" data-wt-step="4">
+            <span class="wt-step-num">04</span>
+            <span class="wt-label">📄 Paper Preview</span>
+          </button>
+          <button class="wt-tab" data-wt-step="5">
+            <span class="wt-step-num">05</span>
+            <span class="wt-label">🖨️ Export & Print</span>
+          </button>
+        </div>
+
+        <!-- Main Walkthrough Stage (Left: Step Description | Right: Realistic Mobile Phone Screen) -->
+        <div class="wt-stage-grid" data-reveal>
+          
+          <!-- Left Column: Step Explanations -->
+          <div class="wt-stage-left">
+            <div class="wt-desc-card">
+              
+              <!-- Step 1 Explanation -->
+              <div class="wt-tab-content active" id="wt-desc-1">
+                <span class="wt-badge amber">STEP 01 — SYLLABUS SELECTION</span>
+                <h3>Add Chapter 3 — Motion</h3>
+                <p>Pick directly from built-in NCERT textbooks or upload custom PDF notes into your private teacher library.</p>
+                <ul class="desc-features">
+                  <li><span class="feat-bullet">•</span> Pre-loaded NCERT Class 8 Science textbook</li>
+                  <li><span class="feat-bullet">•</span> Zero manual data entry or chapter typing required</li>
+                </ul>
+              </div>
+
+              <!-- Step 2 Explanation -->
+              <div class="wt-tab-content" id="wt-desc-2">
+                <span class="wt-badge indigo">STEP 02 — TEST GENERATION</span>
+                <h3>Prompt For a Custom Unit Test</h3>
+                <p>Describe your test requirements in natural language: <em>"Create a 25-mark test with MCQs, short answers, and a diagram question."</em></p>
+                <ul class="desc-features">
+                  <li><span class="feat-bullet">•</span> Instant section marks distribution</li>
+                  <li><span class="feat-bullet">•</span> Automatic difficulty level balancing</li>
+                </ul>
+              </div>
+
+              <!-- Step 3 Explanation -->
+              <div class="wt-tab-content" id="wt-desc-3">
+                <span class="wt-badge indigo">STEP 03 — NATURAL EDITS</span>
+                <h3>Conversational Question Tweaks</h3>
+                <p>Need to refine a question? Simply ask: <em>"Make Question 3 slightly harder"</em> — updated instantly without breaking the layout.</p>
+                <ul class="desc-features">
+                  <li><span class="feat-bullet">•</span> Real-time conversational question replacement</li>
+                  <li><span class="feat-bullet">•</span> Preserves official exam paper styling</li>
+                </ul>
+              </div>
+
+              <!-- Step 4 Explanation -->
+              <div class="wt-tab-content" id="wt-desc-4">
+                <span class="wt-badge amber">STEP 04 — LIVE PAPER PREVIEW</span>
+                <h3>Authentic Printed Paper Preview</h3>
+                <p>Inspect the generated paper formatted exactly like an official board examination document before printing.</p>
+                <ul class="desc-features">
+                  <li><span class="feat-bullet">•</span> Official board headers & double-rule borders</li>
+                  <li><span class="feat-bullet">•</span> Authentic serif typography & handwriting response lines</li>
+                </ul>
+              </div>
+
+              <!-- Step 5 Explanation -->
+              <div class="wt-tab-content" id="wt-desc-5">
+                <span class="wt-badge emerald">STEP 05 — PRINT EXPORT</span>
+                <h3>Download PDF & DOCX Files</h3>
+                <p>Export your paper as a high-resolution print PDF or editable Word document complete with scoring rubric and answer key.</p>
+                <ul class="desc-features">
+                  <li><span class="feat-bullet">•</span> High-resolution PDF & editable Word DOCX exports</li>
+                  <li><span class="feat-bullet">•</span> Complete with printable answer keys</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right Column: Realistic Mobile Phone Frame for Walkthrough -->
+          <div class="wt-stage-right">
+            <div class="phone-mockup-frame">
+              
+              <!-- Phone Bezel Details -->
+              <div class="phone-camera-island"></div>
+              <div class="phone-speaker"></div>
+
+              <!-- Phone Screen Display Viewport -->
+              <div class="phone-screen-viewport">
+                
+                <!-- SCREEN 1: Pick Book & Chapter Screen (Tag Selection) -->
+                <div class="phone-app-screen active" id="wt-phone-screen-1">
+                  <div class="app-header">
+                    <span class="app-room-tag">SOURCE LIBRARY</span>
+                    <span class="app-live-dot">● SELECT</span>
+                  </div>
+                  <div class="app-body">
+                    
+                    <!-- Book Selection Tags -->
+                    <div class="wt-phone-section-label">1. Select Book / Syllabus</div>
+                    <div class="wt-tags-grid">
+                      <span class="wt-tag-pill active">📚 NCERT Class 8 Science ✓</span>
+                      <span class="wt-tag-pill">📘 CBSE Exemplar</span>
+                      <span class="wt-tag-pill">📕 State Board Science</span>
+                    </div>
+
+                    <!-- Chapter Selection Tags -->
+                    <div class="wt-phone-section-label" style="margin-top: 12px;">2. Select Chapter</div>
+                    <div class="wt-tags-grid">
+                      <span class="wt-tag-pill">Ch 1. Crop Production</span>
+                      <span class="wt-tag-pill active">Ch 3. Motion & Force ✓</span>
+                      <span class="wt-tag-pill">Ch 4. Materials</span>
+                      <span class="wt-tag-pill">Ch 5. Coal & Petroleum</span>
+                    </div>
+
+                    <!-- Selected Source Summary Box -->
+                    <div class="wt-selected-source-box">
+                      <span class="check-icon">✓</span>
+                      <div class="sel-text">
+                        <strong>Ready to Generate</strong>
+                        <span>NCERT Class 8 Science ➔ Ch 3. Motion</span>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="phone-home-indicator"></div>
+                </div>
+
+                <!-- SCREEN 2: Generate Test Screen -->
+                <div class="phone-app-screen" id="wt-phone-screen-2">
+                  <div class="app-header">
+                    <span class="app-room-tag">AI PAPER CREATOR</span>
+                    <span class="app-live-dot">● GENERATING</span>
+                  </div>
+                  <div class="app-body">
+                    <div class="wt-chat-bubble user">"Create a 25-mark test for Ch 3 Motion with 2 MCQs, 2 Short Qs, 1 Diagram."</div>
+                    <div class="wt-chat-bubble ai">
+                      <span class="ai-tag">✨ PrePaperAI</span>
+                      <p>Generated 25-Mark Unit Test with Board Formatting & Answer Key!</p>
+                      <div class="mini-paper-preview">
+                        <div class="mini-p-head">UNIT TEST — MOTION (25 MARKS)</div>
+                        <div class="mini-p-q">Q1. Define uniform velocity... [2M]</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="phone-home-indicator"></div>
+                </div>
+
+                <!-- SCREEN 3: Conversational Edits Screen -->
+                <div class="phone-app-screen" id="wt-phone-screen-3">
+                  <div class="app-header">
+                    <span class="app-room-tag">PAPER EDITOR</span>
+                    <span class="app-live-dot">● LIVE EDIT</span>
+                  </div>
+                  <div class="app-body">
+                    <div class="wt-chat-bubble user">"Make Question 3 slightly harder."</div>
+                    <div class="wt-chat-bubble ai">
+                      <span class="ai-tag">✨ PrePaperAI</span>
+                      <p>✓ Updated Question 3 with multi-step analytical problem.</p>
+                      <div class="mini-paper-preview">
+                        <div class="mini-p-q updated">Q3. Calculate acceleration of a train moving from 20m/s to 50m/s... [5M]</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="phone-home-indicator"></div>
+                </div>
+
+                <!-- SCREEN 4: Authentic Printed Paper Preview Screen -->
+                <div class="phone-app-screen" id="wt-phone-screen-4">
+                  <div class="app-header">
+                    <span class="app-room-tag">REAL PAPER PREVIEW</span>
+                    <span class="app-live-dot">● EXAM SHEET</span>
+                  </div>
+                  <div class="app-body">
+                    <!-- Miniature Authentic Board Exam Sheet (Clean Question Paper - No Answers) -->
+                    <div class="mini-printed-exam-sheet">
+                      <div class="mini-sheet-header">
+                        CENTRAL BOARD OF SECONDARY EDUCATION
+                        <div class="sub-h">CLASS VIII — SCIENCE UNIT TEST (MOTION & FORCE)</div>
+                      </div>
+                      <div class="mini-sheet-meta">Time: 45 Mins | Max Marks: 25 | Set: A</div>
+                      <div class="mini-sheet-divider"></div>
+                      
+                      <!-- Section A: 4 MCQs -->
+                      <div class="mini-sec-head">SECTION A — MULTIPLE CHOICE QUESTIONS (1M Each)</div>
+                      
+                      <div class="mini-sheet-q">
+                        <strong>Q.1</strong> What is the SI unit of acceleration?
+                        <div class="mini-mcq-grid">
+                          <span>(a) m/s</span>
+                          <span>(b) m/s²</span>
+                          <span>(c) km/h</span>
+                          <span>(d) N/m</span>
+                        </div>
+                      </div>
+                      
+                      <div class="mini-sheet-q">
+                        <strong>Q.2</strong> Which force opposes relative motion between two surfaces?
+                        <div class="mini-mcq-grid">
+                          <span>(a) Gravity</span>
+                          <span>(b) Friction</span>
+                          <span>(c) Tension</span>
+                          <span>(d) Electrostatic</span>
+                        </div>
+                      </div>
+
+                      <div class="mini-sheet-q">
+                        <strong>Q.3</strong> The slope of a Distance-Time graph represents:
+                        <div class="mini-mcq-grid">
+                          <span>(a) Distance</span>
+                          <span>(b) Acceleration</span>
+                          <span>(c) Speed</span>
+                          <span>(d) Displacement</span>
+                        </div>
+                      </div>
+
+                      <div class="mini-sheet-q">
+                        <strong>Q.4</strong> When an object moves with constant velocity, its acceleration is:
+                        <div class="mini-mcq-grid">
+                          <span>(a) Zero</span>
+                          <span>(b) Positive</span>
+                          <span>(c) Negative</span>
+                          <span>(d) Infinite</span>
+                        </div>
+                      </div>
+
+                      <!-- Section B: 3 Fill in the Blanks -->
+                      <div class="mini-sec-head">SECTION B — FILL IN THE BLANKS (1M Each)</div>
+                      
+                      <div class="mini-sheet-q">
+                        <strong>Q.5</strong> Force per unit area is called ______________.
+                      </div>
+
+                      <div class="mini-sheet-q">
+                        <strong>Q.6</strong> An object stays in motion unless acted upon by an ______________ force.
+                      </div>
+
+                      <div class="mini-sheet-q">
+                        <strong>Q.7</strong> The rate of change of displacement is known as ______________.
+                      </div>
+
+                      <!-- Section C: Short Answer Questions -->
+                      <div class="mini-sec-head">SECTION C — SHORT ANSWER QUESTIONS</div>
+                      
+                      <div class="mini-sheet-q">
+                        <strong>Q.8</strong> State Newton's First Law of Motion with an example. <em>(2M)</em>
+                        <div class="mini-sheet-lines">
+                          <span class="s-line"></span>
+                          <span class="s-line"></span>
+                        </div>
+                      </div>
+
+                      <div class="mini-sheet-q">
+                        <strong>Q.9</strong> Calculate acceleration of a train moving from 10 m/s to 30 m/s in 5s. <em>(3M)</em>
+                        <div class="mini-sheet-lines">
+                          <span class="s-line"></span>
+                          <span class="s-line"></span>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="phone-home-indicator"></div>
+                </div>
+
+                <!-- SCREEN 5: Export PDF Screen -->
+                <div class="phone-app-screen" id="wt-phone-screen-5">
+                  <div class="app-header">
+                    <span class="app-room-tag">EXPORT PAPER</span>
+                    <span class="app-live-dot">● READY</span>
+                  </div>
+                  <div class="app-body text-center">
+                    <div class="pdf-export-icon">📄</div>
+                    <div class="pdf-file-name">Unit_Test_Motion_Class8.pdf</div>
+                    <div class="pdf-meta-tag">Formatted Print-Ready PDF · 25 Marks</div>
+                    <div class="wt-export-btns">
+                      <button class="wt-btn pdf">⬇️ Download PDF</button>
+                      <button class="wt-btn word">📝 Download DOCX</button>
+                    </div>
+                  </div>
+                  <div class="phone-home-indicator"></div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING CTA -->
+    <section class="closing" id="early-access">
+      <div class="container">
+        <h2>One Learning Source. Two Powerful Experiences.</h2>
+        <p>Be first to turn your teaching material into papers and live competitions.</p>
+        <form class="email-form" onsubmit="return false;">
+          <input type="email" placeholder="you@school.edu" aria-label="Email address" required>
+          <button type="submit" class="btn btn-primary">Get Early Access</button>
+        </form>
+        <p class="form-note">No spam. One email when PrePaperAI opens up.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <span class="fbrand">PrePaperAI</span>
+      <span>© 2026 PrePaperAI. Built for teachers.</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
