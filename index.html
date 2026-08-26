@@ -31,7 +31,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap"
     rel="stylesheet">
-    
+
   <link rel="stylesheet" href="styles.css">
 
   <script type="application/ld+json">
@@ -269,12 +269,14 @@
     </header>
 
 
-    <!-- THE TEACHER'S REALITY -->
-    <section class="pad" id="reality">
+    <!-- TEACHER EFFICIENCY & EXPERIENCE -->
+    <section class="pad" id="reality" style="background:var(--paper-100)">
       <div class="container">
         <div class="section-head" data-reveal>
-          <p class="eyebrow">Teaching at your own pace</p>
-          <h2>Prepare exams & games for any lesson, anytime.</h2>
+          <p class="eyebrow">Built for Teacher Convenience</p>
+          <h2>Less prep time. More classroom energy.</h2>
+          <p class="sub-head">Prepare exams and live interactive games for any lesson in minutes — no repetitive
+            formatting or manual re-entry.</p>
         </div>
 
         <div class="chips-wrap" data-reveal>
@@ -286,22 +288,41 @@
           <span class="chip">Class competitions</span>
         </div>
 
-        <div class="reality-split">
-          <div class="problem-card" data-reveal>
-            <h3>The preparation hassle</h3>
-            <p>Creating fresh question papers and reformatting content after every lesson or topic takes hours you'd rather spend teaching.</p>
+        <div class="teacher-benefits" style="margin-top: 24px;">
+          <div class="tb-card" data-reveal>
+            <div class="icon-box">♻️</div>
+            <strong>Reuse Every Lesson</strong>
+            <p>Add notes or chapters once to power instant unit tests, exams, and live games forever.</p>
           </div>
-          <div class="problem-card" data-reveal data-reveal-delay="1">
-            <h3>The motivation challenge</h3>
-            <p>Students learn best with immediate practice after every lesson. Live games give them a fun, social reason to review anytime.</p>
+          <div class="tb-card" data-reveal data-reveal-delay="1">
+            <div class="icon-box">💬</div>
+            <strong>Natural AI Edits</strong>
+            <p>Modify or tweak any question simply by describing it, with zero broken formatting.</p>
           </div>
-          <div class="problem-card" data-reveal data-reveal-delay="2">
-            <h3>Stronger teacher connection</h3>
-            <p>Interactive live games make learning fun and friendly, helping teachers connect with students and build great classroom rapport effortlessly.</p>
+          <div class="tb-card" data-reveal data-reveal-delay="2">
+            <div class="icon-box">🖨️</div>
+            <strong>Print-Ready Papers</strong>
+            <p>Get authentic board-formatted PDF and DOCX question sheets ready to print in seconds.</p>
+          </div>
+          <div class="tb-card" data-reveal>
+            <div class="icon-box">🎮</div>
+            <strong>Instant Engagement</strong>
+            <p>Turn post-lesson revision into lively class competitions that students look forward to.</p>
+          </div>
+          <div class="tb-card" data-reveal data-reveal-delay="1">
+            <div class="icon-box">🤝</div>
+            <strong>Stronger Connection</strong>
+            <p>Make revision interactive and friendly, building genuine classroom rapport effortlessly.</p>
+          </div>
+          <div class="tb-card" data-reveal data-reveal-delay="2">
+            <div class="icon-box">⏱️</div>
+            <strong>90% Time Saved</strong>
+            <p>Go from raw teaching material to classroom-ready materials in minutes instead of hours.</p>
           </div>
         </div>
       </div>
     </section>
+
 
     <!-- WHY NOT JUST USE GENERAL AI? (Position 2 - Immediately After Hero) -->
     <section class="pad compare-section-wrap" id="why-prepaperai">
@@ -441,7 +462,7 @@
             <div class="workflow-badge">INPUT SOURCE</div>
             <h3>Default Library & Private Uploads</h3>
             <p>Pick built-in NCERT & State Board books in 1-click, or upload custom notes.</p>
-            
+
             <div class="library-inline-pills">
               <span class="lib-pill default-pill">📚 Built-in Books</span>
               <span class="lib-pill custom-pill">🔒 Private Vault</span>
@@ -803,13 +824,28 @@
                     </p>
                     <div class="print-mcq-grid">
                       <div class="print-opt"><span>(A)</span> Ribosome</div>
-                      <div class="print-opt correct"><span>(B)</span> Mitochondria <span class="print-check">✓</span>
+                      <div class="print-opt"><span>(B)</span> Mitochondria
+                        <!-- <span class="print-check">✓</span> -->
                       </div>
                       <div class="print-opt"><span>(C)</span> Endoplasmic Reticulum</div>
                       <div class="print-opt"><span>(D)</span> Golgi Apparatus</div>
                     </div>
-                    <div class="print-ans-key">✓ <strong>Answer Key: (B) Mitochondria</strong> — <em>[Generates ATP
-                        through cellular respiration]</em></div>
+                    <!-- <div class="print-ans-key">✓ <strong>Answer Key: (B) Mitochondria</strong> — <em>[Generates ATP
+                        through cellular respiration]</em></div> -->
+                  </div>
+                  <div class="print-qitem">
+                    <p class="print-qtext"><strong>Q.2</strong> Which gas is released during photosynthesis?
+                    </p>
+                    <div class="print-mcq-grid">
+                      <div class="print-opt"><span>(A)</span> Carbon Dioxide</div>
+                      <div class="print-opt"><span>(B)</span> Oxygen
+                        <!-- <span class="print-check">✓</span> -->
+                      </div>
+                      <div class="print-opt"><span>(C)</span> Methane</div>
+                      <div class="print-opt"><span>(D)</span> Hydrogen</div>
+                    </div>
+                    <!-- <div class="print-ans-key">✓ <strong>Answer Key: (B) Mitochondria</strong> — <em>[Generates ATP
+                        through cellular respiration]</em></div> -->
                   </div>
                 </div>
 
@@ -828,8 +864,8 @@
                       <div class="hline"></div>
                       <div class="hline"></div>
                     </div>
-                    <div class="print-ans-key">✓ <strong>Model Answer:</strong> <em>The ratio of sin i to sin r is
-                        constant for a given pair of media (n = sin i / sin r).</em></div>
+                    <!-- <div class="print-ans-key">✓ <strong>Model Answer:</strong> <em>The ratio of sin i to sin r is
+                        constant for a given pair of media (n = sin i / sin r).</em></div> -->
                   </div>
                 </div>
 
@@ -839,9 +875,17 @@
                     <span>Vocabulary Terms:</span> <em>[ Chlorophyll, Newton, Vacuum, Photosynthesis ]</em>
                   </div>
                   <div class="print-qitem">
-                    <p class="print-qtext"><strong>Q.1</strong> In physics, light propagates at its maximum velocity of
-                      3 × 10<sup>8</sup> m/s in a <span class="print-blank-fill">vacuum</span>.</p>
-                    <div class="print-ans-key">✓ <strong>Answer Key: vacuum</strong></div>
+                    <p class="print-qtext"><strong>Q.1</strong> Light propagates at its maximum velocity of
+                      3 × 10<sup>8</sup> m/s in a <span class="print-blank-fill"></span>.</p>
+                    <!-- <div class="print-ans-key">✓ <strong>Answer Key: vacuum</strong></div> -->
+                    <!-- </div> -->
+                    <p class="print-qtext"><strong>Q.2</strong> The <span class="print-blank-fill"></span> is known
+                      as the powerhouse of the cell.</p>
+                    <!-- <div class="print-ans-key">✓ <strong>Answer Key: vacuum</strong></div> -->
+                    <!-- </div> -->
+                    <p class="print-qtext"><strong>Q.3</strong> The green pigment in plants, <span
+                        class="print-blank-fill"></span>, absorbs sunlight for photosynthesis.</p>
+                    <!-- <div class="print-ans-key">✓ <strong>Answer Key: vacuum</strong></div> -->
                   </div>
                 </div>
 
@@ -876,7 +920,7 @@
                         </tr>
                       </tbody>
                     </table>
-                    <div class="print-ans-key">✓ <strong>Answer Key:</strong> <em>1-(C), 2-(A), 3-(D), 4-(B)</em></div>
+                    <!-- <div class="print-ans-key">✓ <strong>Answer Key:</strong> <em>1-(C), 2-(A), 3-(D), 4-(B)</em></div> -->
                   </div>
                 </div>
 
@@ -891,8 +935,8 @@
                   <div class="print-qitem">
                     <p class="print-qtext"><strong>Q.1</strong> According to Lindeman's Law, what percentage of energy
                       is transferred between consecutive trophic levels?</p>
-                    <div class="print-ans-key">✓ <strong>Answer Key:</strong> <em>10% (Lindeman's 10% Energy Transfer
-                        Law)</em></div>
+                    <!-- <div class="print-ans-key">✓ <strong>Answer Key:</strong> <em>10% (Lindeman's 10% Energy Transfer
+                        Law)</em></div> -->
                   </div>
                 </div>
 
@@ -915,7 +959,7 @@
                   <div class="print-qitem">
                     <p class="print-qtext"><strong>Q.1</strong> Refer to <strong>FIGURE 1.1</strong> above. Identify
                       Part (A) and describe its function.</p>
-                    <div class="print-ans-key">✓ <strong>Answer Key: Part (A) = Nuclear Envelope</strong></div>
+                    <!-- <div class="print-ans-key">✓ <strong>Answer Key: Part (A) = Nuclear Envelope</strong></div> -->
                   </div>
                 </div>
 
@@ -969,7 +1013,8 @@
         <div class="section-head text-center" data-reveal>
           <span class="eyebrow">Interactive Classroom Energy</span>
           <h2>From syllabus to live competition, in one flow.</h2>
-          <p class="sub-head">Turn any chapter into a real-time multiplayer classroom quiz game. Students compete on their phones with live leaderboards.</p>
+          <p class="sub-head">Turn any chapter into a real-time multiplayer classroom quiz game. Students compete on
+            their phones with live leaderboards.</p>
         </div>
 
         <!-- Section Navigation Tabs (Auto-Rotates Every 3s) -->
@@ -990,16 +1035,17 @@
 
         <!-- Main Showcase Stage (Left: Tab Description | Right: Realistic Mobile Phone Screen) -->
         <div class="live-stage-grid" data-reveal>
-          
+
           <!-- Left Column: Tab Descriptions -->
           <div class="live-stage-left">
             <div class="live-desc-card">
-              
+
               <!-- Tab 1 Explanation -->
               <div class="live-tab-content active" id="live-desc-waiting">
                 <span class="live-badge amber">STEP 01 — WAITING ROOM</span>
                 <h3>One-Tap Student Join & Live Timer</h3>
-                <p>Teachers launch the game room code or send a quick WhatsApp link. Students tap to join instantly from their phones without creating any account.</p>
+                <p>Teachers launch the game room code or send a quick WhatsApp link. Students tap to join instantly from
+                  their phones without creating any account.</p>
                 <ul class="desc-features">
                   <li><span class="feat-bullet">•</span> Live room countdown timer syncing all devices</li>
                   <li><span class="feat-bullet">•</span> Instant student avatar join animations</li>
@@ -1011,7 +1057,8 @@
               <div class="live-tab-content" id="live-desc-quiz">
                 <span class="live-badge indigo">STEP 02 — LIVE QUIZ QUESTION</span>
                 <h3>Interactive Slide Questions & Instant Response</h3>
-                <p>Questions slide in smoothly with real-time timers. Students select their answers on mobile, earning streak multipliers and speed bonus points.</p>
+                <p>Questions slide in smoothly with real-time timers. Students select their answers on mobile, earning
+                  streak multipliers and speed bonus points.</p>
                 <ul class="desc-features">
                   <li><span class="feat-bullet">•</span> Smooth horizontal question slide animations</li>
                   <li><span class="feat-bullet">•</span> Real-time question countdown timer bar</li>
@@ -1023,11 +1070,13 @@
               <div class="live-tab-content" id="live-desc-leaderboard">
                 <span class="live-badge emerald">STEP 03 — LIVE LEADERBOARD</span>
                 <h3>Real-Time Rank Shifts & Class Hype</h3>
-                <p>After each question, scores update live! Ranks re-order dynamically on screen as top performers climb up the leaderboard.</p>
+                <p>After each question, scores update live! Ranks re-order dynamically on screen as top performers climb
+                  up the leaderboard.</p>
                 <ul class="desc-features">
                   <li><span class="feat-bullet">•</span> Dynamic rank re-ordering & score counting</li>
                   <li><span class="feat-bullet">•</span> Instant podium & top-performer highlights</li>
-                  <li><span class="feat-bullet">•</span> Keeps classroom motivation high through friendly competition</li>
+                  <li><span class="feat-bullet">•</span> Keeps classroom motivation high through friendly competition
+                  </li>
                 </ul>
               </div>
 
@@ -1037,14 +1086,14 @@
           <!-- Right Column: Authentic Realistic Mobile Phone Chassis -->
           <div class="live-stage-right">
             <div class="phone-mockup-frame">
-              
+
               <!-- Phone Bezel Details -->
               <div class="phone-camera-island"></div>
               <div class="phone-speaker"></div>
 
               <!-- Phone Screen Display Viewport -->
               <div class="phone-screen-viewport">
-                
+
                 <!-- SCREEN 1: Waiting Room Screen -->
                 <div class="phone-app-screen active" id="phone-screen-waiting">
                   <div class="app-header">
@@ -1078,13 +1127,15 @@
                     <span class="q-progress">QUESTION <strong id="q-num-val">1</strong> OF 3</span>
                     <span class="q-score-tag">⚡ 1,250 PTS</span>
                   </div>
-                  
+
                   <!-- Question Slider Container -->
                   <div class="q-slider-track" id="q-slider-track">
-                    
+
                     <!-- Slide 1 -->
                     <div class="q-slide active">
-                      <div class="q-timer-bar-wrap"><div class="q-timer-bar fill-animate"></div></div>
+                      <div class="q-timer-bar-wrap">
+                        <div class="q-timer-bar fill-animate"></div>
+                      </div>
                       <div class="q-card-text">Q1. Which gas is liberated when sodium reacts with water?</div>
                       <div class="q-options-list">
                         <button class="q-opt-btn">(A) Oxygen Gas</button>
@@ -1096,7 +1147,9 @@
 
                     <!-- Slide 2 -->
                     <div class="q-slide">
-                      <div class="q-timer-bar-wrap"><div class="q-timer-bar fill-animate"></div></div>
+                      <div class="q-timer-bar-wrap">
+                        <div class="q-timer-bar fill-animate"></div>
+                      </div>
                       <div class="q-card-text">Q2. What is the SI unit of Electric Current?</div>
                       <div class="q-options-list">
                         <button class="q-opt-btn">(A) Volt (V)</button>
@@ -1108,7 +1161,9 @@
 
                     <!-- Slide 3 -->
                     <div class="q-slide">
-                      <div class="q-timer-bar-wrap"><div class="q-timer-bar fill-animate"></div></div>
+                      <div class="q-timer-bar-wrap">
+                        <div class="q-timer-bar fill-animate"></div>
+                      </div>
                       <div class="q-card-text">Q3. Which organelle is known as the powerhouse of the cell?</div>
                       <div class="q-options-list">
                         <button class="q-opt-btn">(A) Ribosome</button>
@@ -1130,10 +1185,10 @@
                     <span class="app-room-tag">🏆 LIVE RANKINGS</span>
                     <span class="app-live-dot">● ROUND 3</span>
                   </div>
-                  
+
                   <div class="app-body">
                     <div class="lb-phone-title">Leaderboard</div>
-                    
+
                     <!-- Dynamic Re-ordering Leaderboard List -->
                     <div class="phone-lb-list" id="phone-lb-list">
                       <div class="phone-lb-row rank-1" data-player="aarav">
@@ -1273,84 +1328,53 @@
       </div>
     </section> -->
 
-    <!-- BENEFITS FOR TEACHERS -->
-    <section class="pad" style="background:var(--paper-100)">
-      <div class="container">
-        <div class="section-head" data-reveal>
-          <p class="eyebrow">Benefits for teachers</p>
-          <h2>Less prep time. More classroom energy.</h2>
-        </div>
-
-        <div class="teacher-benefits">
-          <div class="tb-card" data-reveal>
-            <div class="icon-box">♻️</div><strong>Reuse material</strong>
-            <p>One upload powers every future paper and game.</p>
-          </div>
-          <div class="tb-card" data-reveal data-reveal-delay="1">
-            <div class="icon-box">💬</div><strong>Natural edits</strong>
-            <p>Change any question by describing it, not reformatting it.</p>
-          </div>
-          <div class="tb-card" data-reveal data-reveal-delay="2">
-            <div class="icon-box">🖨️</div><strong>Printable papers</strong>
-            <p>Clean PDF and DOCX exports, exam-ready.</p>
-          </div>
-          <div class="tb-card" data-reveal>
-            <div class="icon-box">🎮</div><strong>Engagement</strong>
-            <p>Turn revision into something students look forward to.</p>
-          </div>
-          <div class="tb-card" data-reveal data-reveal-delay="1">
-            <div class="icon-box">⏱️</div><strong>Time saved</strong>
-            <p>Minutes, not hours, from content to classroom.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- COMPLETE EXAMPLE WALKTHROUGH (Interactive Mobile Phone Showcase) -->
     <section class="pad" id="walkthrough">
       <div class="container">
         <div class="section-head text-center" data-reveal>
           <span class="eyebrow">End-to-End Walkthrough</span>
           <h2>Class 8 Science, start to finish.</h2>
-          <p class="sub-head">See how a single chapter goes from syllabus selection to printable paper and export in minutes.</p>
+          <p class="sub-head">See how a single chapter goes from syllabus selection to printable paper and export in
+            minutes.</p>
         </div>
 
         <!-- Walkthrough Navigation Chips (Auto-Rotates Every 3s) -->
         <div class="walkthrough-tabs-wrap" data-reveal>
           <button class="wt-tab active" data-wt-step="1">
-            <span class="wt-step-num">01</span>
+            <span class="wt-step-num">1</span>
             <span class="wt-label">📘 Pick Chapter</span>
           </button>
           <button class="wt-tab" data-wt-step="2">
-            <span class="wt-step-num">02</span>
+            <span class="wt-step-num">2</span>
             <span class="wt-label">📝 Prompt AI</span>
           </button>
           <button class="wt-tab" data-wt-step="3">
-            <span class="wt-step-num">03</span>
+            <span class="wt-step-num">3</span>
             <span class="wt-label">💬 Natural Edits</span>
           </button>
           <button class="wt-tab" data-wt-step="4">
-            <span class="wt-step-num">04</span>
+            <span class="wt-step-num">4</span>
             <span class="wt-label">📄 Paper Preview</span>
           </button>
           <button class="wt-tab" data-wt-step="5">
-            <span class="wt-step-num">05</span>
+            <span class="wt-step-num">5</span>
             <span class="wt-label">🖨️ Export & Print</span>
           </button>
         </div>
 
         <!-- Main Walkthrough Stage (Left: Step Description | Right: Realistic Mobile Phone Screen) -->
         <div class="wt-stage-grid" data-reveal>
-          
+
           <!-- Left Column: Step Explanations -->
           <div class="wt-stage-left">
             <div class="wt-desc-card">
-              
+
               <!-- Step 1 Explanation -->
               <div class="wt-tab-content active" id="wt-desc-1">
-                <span class="wt-badge amber">STEP 01 — SYLLABUS SELECTION</span>
+                <span class="wt-badge amber">STEP 1 — SYLLABUS SELECTION</span>
                 <h3>Add Chapter 3 — Motion</h3>
-                <p>Pick directly from built-in NCERT textbooks or upload custom PDF notes into your private teacher library.</p>
+                <p>Pick directly from built-in NCERT textbooks or upload custom PDF notes into your private teacher
+                  library.</p>
                 <ul class="desc-features">
                   <li><span class="feat-bullet">•</span> Pre-loaded NCERT Class 8 Science textbook</li>
                   <li><span class="feat-bullet">•</span> Zero manual data entry or chapter typing required</li>
@@ -1359,9 +1383,10 @@
 
               <!-- Step 2 Explanation -->
               <div class="wt-tab-content" id="wt-desc-2">
-                <span class="wt-badge indigo">STEP 02 — TEST GENERATION</span>
+                <span class="wt-badge indigo">STEP 2 — TEST GENERATION</span>
                 <h3>Prompt For a Custom Unit Test</h3>
-                <p>Describe your test requirements in natural language: <em>"Create a 25-mark test with MCQs, short answers, and a diagram question."</em></p>
+                <p>Describe your test requirements in natural language: <em>"Create a 25-mark test with MCQs, short
+                    answers, and a diagram question."</em></p>
                 <ul class="desc-features">
                   <li><span class="feat-bullet">•</span> Instant section marks distribution</li>
                   <li><span class="feat-bullet">•</span> Automatic difficulty level balancing</li>
@@ -1370,9 +1395,10 @@
 
               <!-- Step 3 Explanation -->
               <div class="wt-tab-content" id="wt-desc-3">
-                <span class="wt-badge indigo">STEP 03 — NATURAL EDITS</span>
+                <span class="wt-badge indigo">STEP 3 — NATURAL EDITS</span>
                 <h3>Conversational Question Tweaks</h3>
-                <p>Need to refine a question? Simply ask: <em>"Make Question 3 slightly harder"</em> — updated instantly without breaking the layout.</p>
+                <p>Need to refine a question? Simply ask: <em>"Make Question 3 slightly harder"</em> — updated instantly
+                  without breaking the layout.</p>
                 <ul class="desc-features">
                   <li><span class="feat-bullet">•</span> Real-time conversational question replacement</li>
                   <li><span class="feat-bullet">•</span> Preserves official exam paper styling</li>
@@ -1381,9 +1407,10 @@
 
               <!-- Step 4 Explanation -->
               <div class="wt-tab-content" id="wt-desc-4">
-                <span class="wt-badge amber">STEP 04 — LIVE PAPER PREVIEW</span>
+                <span class="wt-badge amber">STEP 4 — LIVE PAPER PREVIEW</span>
                 <h3>Authentic Printed Paper Preview</h3>
-                <p>Inspect the generated paper formatted exactly like an official board examination document before printing.</p>
+                <p>Inspect the generated paper formatted exactly like an official board examination document before
+                  printing.</p>
                 <ul class="desc-features">
                   <li><span class="feat-bullet">•</span> Official board headers & double-rule borders</li>
                   <li><span class="feat-bullet">•</span> Authentic serif typography & handwriting response lines</li>
@@ -1392,9 +1419,10 @@
 
               <!-- Step 5 Explanation -->
               <div class="wt-tab-content" id="wt-desc-5">
-                <span class="wt-badge emerald">STEP 05 — PRINT EXPORT</span>
+                <span class="wt-badge emerald">STEP 5 — PRINT EXPORT</span>
                 <h3>Download PDF & DOCX Files</h3>
-                <p>Export your paper as a high-resolution print PDF or editable Word document complete with scoring rubric and answer key.</p>
+                <p>Export your paper as a high-resolution print PDF or editable Word document complete with scoring
+                  rubric and answer key.</p>
                 <ul class="desc-features">
                   <li><span class="feat-bullet">•</span> High-resolution PDF & editable Word DOCX exports</li>
                   <li><span class="feat-bullet">•</span> Complete with printable answer keys</li>
@@ -1407,14 +1435,14 @@
           <!-- Right Column: Realistic Mobile Phone Frame for Walkthrough -->
           <div class="wt-stage-right">
             <div class="phone-mockup-frame">
-              
+
               <!-- Phone Bezel Details -->
               <div class="phone-camera-island"></div>
               <div class="phone-speaker"></div>
 
               <!-- Phone Screen Display Viewport -->
               <div class="phone-screen-viewport">
-                
+
                 <!-- SCREEN 1: Pick Book & Chapter Screen (Tag Selection) -->
                 <div class="phone-app-screen active" id="wt-phone-screen-1">
                   <div class="app-header">
@@ -1422,7 +1450,7 @@
                     <span class="app-live-dot">● SELECT</span>
                   </div>
                   <div class="app-body">
-                    
+
                     <!-- Book Selection Tags -->
                     <div class="wt-phone-section-label">1. Select Book / Syllabus</div>
                     <div class="wt-tags-grid">
@@ -1460,7 +1488,8 @@
                     <span class="app-live-dot">● GENERATING</span>
                   </div>
                   <div class="app-body">
-                    <div class="wt-chat-bubble user">"Create a 25-mark test for Ch 3 Motion with 2 MCQs, 2 Short Qs, 1 Diagram."</div>
+                    <div class="wt-chat-bubble user">"Create a 25-mark test for Ch 3 Motion with 2 MCQs, 2 Short Qs, 1
+                      Diagram."</div>
                     <div class="wt-chat-bubble ai">
                       <span class="ai-tag">✨ PrePaperAI</span>
                       <p>Generated 25-Mark Unit Test with Board Formatting & Answer Key!</p>
@@ -1485,7 +1514,8 @@
                       <span class="ai-tag">✨ PrePaperAI</span>
                       <p>✓ Updated Question 3 with multi-step analytical problem.</p>
                       <div class="mini-paper-preview">
-                        <div class="mini-p-q updated">Q3. Calculate acceleration of a train moving from 20m/s to 50m/s... [5M]</div>
+                        <div class="mini-p-q updated">Q3. Calculate acceleration of a train moving from 20m/s to
+                          50m/s... [5M]</div>
                       </div>
                     </div>
                   </div>
@@ -1507,10 +1537,10 @@
                       </div>
                       <div class="mini-sheet-meta">Time: 45 Mins | Max Marks: 25 | Set: A</div>
                       <div class="mini-sheet-divider"></div>
-                      
+
                       <!-- Section A: 4 MCQs -->
                       <div class="mini-sec-head">SECTION A — MULTIPLE CHOICE QUESTIONS (1M Each)</div>
-                      
+
                       <div class="mini-sheet-q">
                         <strong>Q.1</strong> What is the SI unit of acceleration?
                         <div class="mini-mcq-grid">
@@ -1520,7 +1550,7 @@
                           <span>(d) N/m</span>
                         </div>
                       </div>
-                      
+
                       <div class="mini-sheet-q">
                         <strong>Q.2</strong> Which force opposes relative motion between two surfaces?
                         <div class="mini-mcq-grid">
@@ -1553,7 +1583,7 @@
 
                       <!-- Section B: 3 Fill in the Blanks -->
                       <div class="mini-sec-head">SECTION B — FILL IN THE BLANKS (1M Each)</div>
-                      
+
                       <div class="mini-sheet-q">
                         <strong>Q.5</strong> Force per unit area is called ______________.
                       </div>
@@ -1568,7 +1598,7 @@
 
                       <!-- Section C: Short Answer Questions -->
                       <div class="mini-sec-head">SECTION C — SHORT ANSWER QUESTIONS</div>
-                      
+
                       <div class="mini-sheet-q">
                         <strong>Q.8</strong> State Newton's First Law of Motion with an example. <em>(2M)</em>
                         <div class="mini-sheet-lines">
@@ -1578,7 +1608,8 @@
                       </div>
 
                       <div class="mini-sheet-q">
-                        <strong>Q.9</strong> Calculate acceleration of a train moving from 10 m/s to 30 m/s in 5s. <em>(3M)</em>
+                        <strong>Q.9</strong> Calculate acceleration of a train moving from 10 m/s to 30 m/s in 5s.
+                        <em>(3M)</em>
                         <div class="mini-sheet-lines">
                           <span class="s-line"></span>
                           <span class="s-line"></span>
@@ -1623,6 +1654,8 @@
         <h2>One Learning Source. Two Powerful Experiences.</h2>
         <p>Be first to turn your teaching material into papers and live competitions.</p>
         <form class="email-form" onsubmit="return false;">
+          <input type="name" placeholder="Your Name" aria-label="Name" required>
+          <input type="email" placeholder="you@school.edu" aria-label="Email address" required>
           <input type="email" placeholder="you@school.edu" aria-label="Email address" required>
           <button type="submit" class="btn btn-primary">Get Early Access</button>
         </form>

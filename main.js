@@ -443,7 +443,7 @@
       wtAutoTimer = setInterval(function () {
         currentWtIdx = (currentWtIdx + 1) % wtStepKeys.length;
         switchWtTab(wtStepKeys[currentWtIdx]);
-      }, 3000);
+      }, 4000);
     }
 
     function stopWtAutoRotation() {
