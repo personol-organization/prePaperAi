@@ -463,6 +463,87 @@
   }
 
   /* ---------------------------------------------------------
+     Early Access Form Submission to Google Apps Script
+  --------------------------------------------------------- */
+  function initEarlyAccessForm() {
+    var GOOGLE_SCRIPT_URL =
+      "https://script.google.com/macros/s/AKfycbxWC8_B4f-ZtSULoOvbcJPky9_lwuJNCFEDv8WQ3uUF4AnlcnYD6cMPmkxc0cL24iVr9A/exec";
+
+    var form = document.getElementById("earlyAccessForm");
+    if (!form) return;
+
+    var submitButton = document.getElementById("submitEarlyAccess");
+    var feedbackDiv = document.getElementById("formFeedback");
+
+    form.addEventListener("submit", async function (event) {
+      event.preventDefault();
+
+      var data = {
+        name: (document.getElementById("teacherName") || {}).value || "",
+        school: (document.getElementById("teacherSchool") || {}).value || "",
+        email: (document.getElementById("teacherEmail") || {}).value || "",
+        phone: (document.getElementById("teacherPhone") || {}).value || "",
+        feedback: (document.getElementById("teacherFeedback") || {}).value || "",
+        timestamp: new Date().toISOString()
+      };
+
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = "Submitting...";
+      }
+
+      if (feedbackDiv) {
+        feedbackDiv.style.display = "none";
+        feedbackDiv.className = "form-feedback";
+        feedbackDiv.textContent = "";
+      }
+
+      try {
+        await fetch(GOOGLE_SCRIPT_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(data)
+        });
+
+        form.reset();
+
+        if (submitButton) {
+          submitButton.textContent = "You're on the list! ✓";
+        }
+
+        if (feedbackDiv) {
+          feedbackDiv.className = "form-feedback success";
+          feedbackDiv.textContent = "Thank you! We've received your request and will reach out with your beta invite.";
+          feedbackDiv.style.display = "block";
+        }
+
+      } catch (error) {
+        console.error("Form submission error:", error);
+
+        if (submitButton) {
+          submitButton.textContent = "Something went wrong. Try again.";
+        }
+
+        if (feedbackDiv) {
+          feedbackDiv.className = "form-feedback error";
+          feedbackDiv.textContent = "Submission failed. Please check your connection and try again.";
+          feedbackDiv.style.display = "block";
+        }
+      }
+
+      setTimeout(function () {
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = "Get Early Access & Beta Invites →";
+        }
+      }, 4000);
+    });
+  }
+
+  /* ---------------------------------------------------------
      Init
   --------------------------------------------------------- */
   document.addEventListener("DOMContentLoaded", function () {
@@ -479,5 +560,6 @@
     initQuestionTypeTabs();
     initLiveGameTabs();
     initWalkthroughTabs();
+    initEarlyAccessForm();
   });
 })();

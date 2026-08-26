@@ -68,7 +68,7 @@
             actually look forward to.</p>
           <div class="hero-ctas">
             <a href="#early-access" class="btn btn-primary">Get Early Access</a>
-            <a href="#one-source" class="btn btn-ghost">See How It Works</a>
+            <a href="#how-it-word" class="btn btn-ghost">See How It Works</a>
           </div>
         </div>
 
@@ -628,7 +628,7 @@
     </section>
 
     <!-- JUST DESCRIBE WHAT YOU NEED -->
-    <section class="pad" style="background:var(--navy-950)">
+    <section class="pad" id="how-it-word" style="background:var(--navy-950)">
       <div class="container on-dark">
         <div class="section-head" data-reveal>
           <p class="eyebrow">No formatting required</p>
@@ -1651,15 +1651,96 @@
     <!-- CLOSING CTA -->
     <section class="closing" id="early-access">
       <div class="container">
-        <h2>One Learning Source. Two Powerful Experiences.</h2>
-        <p>Be first to turn your teaching material into papers and live competitions.</p>
-        <form class="email-form" onsubmit="return false;">
-          <input type="name" placeholder="Your Name" aria-label="Name" required>
-          <input type="email" placeholder="you@school.edu" aria-label="Email address" required>
-          <input type="email" placeholder="you@school.edu" aria-label="Email address" required>
-          <button type="submit" class="btn btn-primary">Get Early Access</button>
-        </form>
-        <p class="form-note">No spam. One email when PrePaperAI opens up.</p>
+        <div class="closing-split-grid">
+
+          <!-- Left Column: Compelling Description & Early Adopter Perks -->
+          <div class="closing-info-col" data-reveal>
+            <span class="eyebrow on-dark-pill">Limited Educator Beta</span>
+            <h2>One Learning Source. Two Powerful Experiences.</h2>
+            <p class="closing-sub">We're onboarding a small cohort of passionate educators to shape the future of exam
+              creation and interactive classroom energy. Share your details to secure priority early access and
+              exclusive founding teacher perks.</p>
+
+            <div class="closing-perks-list">
+              <div class="perk-item">
+                <span class="perk-icon">✨</span>
+                <div class="perk-text">
+                  <strong>Priority Beta Access</strong>
+                  <span>Be the first to generate exams and live games from your syllabus.</span>
+                </div>
+              </div>
+              <div class="perk-item">
+                <span class="perk-icon">🎯</span>
+                <div class="perk-text">
+                  <strong>Direct Feature Influence</strong>
+                  <span>Request custom board exam formats, question styles, and export types.</span>
+                </div>
+              </div>
+              <div class="perk-item">
+                <span class="perk-icon">🎁</span>
+                <div class="perk-text">
+                  <strong>Free Lifetime Educator Tier</strong>
+                  <span>Enjoy foundational premium privileges as an early adopter.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive 2-Column Form (Slightly Bigger) -->
+          <div class="closing-form-col" data-reveal data-reveal-delay="1">
+            <div class="closing-form-card">
+              <div class="form-card-header">
+                <h3>Request Early Access</h3>
+                <p>Takes less than 30 seconds. Only email is required.</p>
+              </div>
+
+              <form class="email-form" id="earlyAccessForm">
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="teacherName">Your Name</label>
+                    <input type="text" id="teacherName" name="name" placeholder="e.g. Shaikh Anwar"
+                      aria-label="Full Name">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="teacherSchool">School / Institute</label>
+                    <input type="text" id="teacherSchool" name="school" placeholder="e.g. Sk. International School"
+                      aria-label="School or Institute">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="teacherEmail">Email Address <span class="req">*</span></label>
+                    <input type="email" id="teacherEmail" name="email" placeholder="you@school.edu"
+                      aria-label="Email address" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="teacherPhone">Phone / WhatsApp</label>
+                    <input type="tel" id="teacherPhone" name="phone" placeholder="+1 (555) 000-0000"
+                      aria-label="Phone Number">
+                  </div>
+
+                  <div class="form-group full-span">
+                    <label for="teacherFeedback">Please Leave your thoughts</label>
+                    <textarea id="teacherFeedback" name="feedback"
+                      placeholder="e.g., Formatting formulas, creating balanced MCQs, saving time..." rows="3"
+                      aria-label="Feedback or Comments"></textarea>
+                  </div>
+
+                  <div class="form-group full-span">
+                    <button type="submit" id="submitEarlyAccess" class="btn btn-primary">
+                      Get Early Access & Beta Invites →
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+              <div id="formFeedback" class="form-feedback" style="display:none;" role="status"></div>
+              <p class="form-note">🔒 No spam. Only an exclusive invite link when PrePaperAI opens for beta testing.</p>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
